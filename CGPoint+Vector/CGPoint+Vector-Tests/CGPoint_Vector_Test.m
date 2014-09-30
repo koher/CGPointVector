@@ -11,11 +11,11 @@ static const CGFloat Torelance = 1.0e-5;
 @implementation CGPoint_Vector_Tests
 
 - (void)setUp {
-    [super setUp];
+	[super setUp];
 }
 
 - (void)tearDown {
-    [super tearDown];
+	[super tearDown];
 }
 
 - (void)testNearlyEqualToPoint {

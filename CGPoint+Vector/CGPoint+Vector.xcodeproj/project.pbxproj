@@ -7,29 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6BC945E1974F1070004192F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BC945D1974F1070004192F /* Foundation.framework */; };
-		D6BC946C1974F1080004192F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BC946B1974F1080004192F /* XCTest.framework */; };
-		D6BC946D1974F1080004192F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BC945D1974F1070004192F /* Foundation.framework */; };
-		D6BC94721974F1080004192F /* libCGPoint+Vector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BC945A1974F1070004192F /* libCGPoint+Vector.a */; };
-		D6BC94841974F1440004192F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BC94831974F1440004192F /* CoreGraphics.framework */; };
-		D6BC94991975339A0004192F /* CGPoint+Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BC94981975339A0004192F /* CGPoint+Vector.m */; };
-		D6BC949F197533A30004192F /* CGPoint+Vector-Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6BC949B197533A30004192F /* CGPoint+Vector-Tests-Info.plist */; };
-		D6BC94A0197533A30004192F /* CGPoint+Vector-Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BC949C197533A30004192F /* CGPoint+Vector-Tests.m */; };
-		D6BC94A1197533A30004192F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6BC949D197533A30004192F /* InfoPlist.strings */; };
+		D61E9D6919DAC69500D2FE5B /* CGPoint+Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E9D6719DAC69500D2FE5B /* CGPoint+Vector.m */; };
+		D61E9D6B19DAC6AD00D2FE5B /* CGPoint+Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E9D6819DAC69500D2FE5B /* CGPoint+Vector.swift */; };
+		D61E9D6E19DAC72000D2FE5B /* libCGPoint+Vector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61E9D4A19DAC56B00D2FE5B /* libCGPoint+Vector.a */; };
+		D61E9D7519DAD45800D2FE5B /* CGPoint_Vector_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D61E9D7219DAD45800D2FE5B /* CGPoint_Vector_Test.m */; };
+		D61E9D7619DAD45800D2FE5B /* CGPoint_Vector_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E9D7319DAD45800D2FE5B /* CGPoint_Vector_Tests.swift */; };
+		D61E9D7719DAD45800D2FE5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61E9D7419DAD45800D2FE5B /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D6BC94701974F1080004192F /* PBXContainerItemProxy */ = {
+		D61E9D6C19DAC71A00D2FE5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D6BC94521974F1070004192F /* Project object */;
+			containerPortal = D61E9D4219DAC56B00D2FE5B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D6BC94591974F1070004192F;
+			remoteGlobalIDString = D61E9D4919DAC56B00D2FE5B;
 			remoteInfo = "CGPoint+Vector";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D6BC94581974F1070004192F /* CopyFiles */ = {
+		D61E9D4819DAC56B00D2FE5B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -41,85 +38,69 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D6BC945A1974F1070004192F /* libCGPoint+Vector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCGPoint+Vector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6BC945D1974F1070004192F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D6BC946A1974F1080004192F /* CGPoint+Vector-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CGPoint+Vector-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6BC946B1974F1080004192F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D6BC94831974F1440004192F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D6BC94971975339A0004192F /* CGPoint+Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPoint+Vector.h"; sourceTree = "<group>"; };
-		D6BC94981975339A0004192F /* CGPoint+Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGPoint+Vector.m"; sourceTree = "<group>"; };
-		D6BC949B197533A30004192F /* CGPoint+Vector-Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CGPoint+Vector-Tests-Info.plist"; sourceTree = "<group>"; };
-		D6BC949C197533A30004192F /* CGPoint+Vector-Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGPoint+Vector-Tests.m"; sourceTree = "<group>"; };
-		D6BC949E197533A30004192F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D61E9D4A19DAC56B00D2FE5B /* libCGPoint+Vector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCGPoint+Vector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61E9D5519DAC56B00D2FE5B /* CGPoint+VectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CGPoint+VectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61E9D6619DAC69500D2FE5B /* CGPoint+Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPoint+Vector.h"; sourceTree = "<group>"; };
+		D61E9D6719DAC69500D2FE5B /* CGPoint+Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGPoint+Vector.m"; sourceTree = "<group>"; };
+		D61E9D6819DAC69500D2FE5B /* CGPoint+Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Vector.swift"; sourceTree = "<group>"; };
+		D61E9D7219DAD45800D2FE5B /* CGPoint_Vector_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPoint_Vector_Test.m; sourceTree = "<group>"; };
+		D61E9D7319DAD45800D2FE5B /* CGPoint_Vector_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint_Vector_Tests.swift; sourceTree = "<group>"; };
+		D61E9D7419DAD45800D2FE5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D6BC94571974F1070004192F /* Frameworks */ = {
+		D61E9D4719DAC56B00D2FE5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BC94841974F1440004192F /* CoreGraphics.framework in Frameworks */,
-				D6BC945E1974F1070004192F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6BC94671974F1080004192F /* Frameworks */ = {
+		D61E9D5219DAC56B00D2FE5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BC94721974F1080004192F /* libCGPoint+Vector.a in Frameworks */,
-				D6BC946C1974F1080004192F /* XCTest.framework in Frameworks */,
-				D6BC946D1974F1080004192F /* Foundation.framework in Frameworks */,
+				D61E9D6E19DAC72000D2FE5B /* libCGPoint+Vector.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D6BC94511974F1070004192F = {
+		D61E9D4119DAC56B00D2FE5B = {
 			isa = PBXGroup;
 			children = (
-				D6BC94951975339A0004192F /* CGPoint+Vector */,
-				D6BC949A197533A30004192F /* CGPoint+Vector-Tests */,
-				D6BC945C1974F1070004192F /* Frameworks */,
-				D6BC945B1974F1070004192F /* Products */,
+				D61E9D6519DAC69500D2FE5B /* CGPoint+Vector */,
+				D61E9D7119DAD45800D2FE5B /* CGPoint+Vector-Tests */,
+				D61E9D4B19DAC56B00D2FE5B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D6BC945B1974F1070004192F /* Products */ = {
+		D61E9D4B19DAC56B00D2FE5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6BC945A1974F1070004192F /* libCGPoint+Vector.a */,
-				D6BC946A1974F1080004192F /* CGPoint+Vector-Tests.xctest */,
+				D61E9D4A19DAC56B00D2FE5B /* libCGPoint+Vector.a */,
+				D61E9D5519DAC56B00D2FE5B /* CGPoint+VectorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6BC945C1974F1070004192F /* Frameworks */ = {
+		D61E9D6519DAC69500D2FE5B /* CGPoint+Vector */ = {
 			isa = PBXGroup;
 			children = (
-				D6BC94831974F1440004192F /* CoreGraphics.framework */,
-				D6BC945D1974F1070004192F /* Foundation.framework */,
-				D6BC946B1974F1080004192F /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D6BC94951975339A0004192F /* CGPoint+Vector */ = {
-			isa = PBXGroup;
-			children = (
-				D6BC94971975339A0004192F /* CGPoint+Vector.h */,
-				D6BC94981975339A0004192F /* CGPoint+Vector.m */,
+				D61E9D6619DAC69500D2FE5B /* CGPoint+Vector.h */,
+				D61E9D6719DAC69500D2FE5B /* CGPoint+Vector.m */,
+				D61E9D6819DAC69500D2FE5B /* CGPoint+Vector.swift */,
 			);
 			path = "CGPoint+Vector";
 			sourceTree = "<group>";
 		};
-		D6BC949A197533A30004192F /* CGPoint+Vector-Tests */ = {
+		D61E9D7119DAD45800D2FE5B /* CGPoint+Vector-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D6BC949B197533A30004192F /* CGPoint+Vector-Tests-Info.plist */,
-				D6BC949C197533A30004192F /* CGPoint+Vector-Tests.m */,
-				D6BC949D197533A30004192F /* InfoPlist.strings */,
+				D61E9D7219DAD45800D2FE5B /* CGPoint_Vector_Test.m */,
+				D61E9D7319DAD45800D2FE5B /* CGPoint_Vector_Tests.swift */,
+				D61E9D7419DAD45800D2FE5B /* Info.plist */,
 			);
 			path = "CGPoint+Vector-Tests";
 			sourceTree = "<group>";
@@ -127,13 +108,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6BC94591974F1070004192F /* CGPoint+Vector */ = {
+		D61E9D4919DAC56B00D2FE5B /* CGPoint+Vector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6BC947D1974F1080004192F /* Build configuration list for PBXNativeTarget "CGPoint+Vector" */;
+			buildConfigurationList = D61E9D5B19DAC56B00D2FE5B /* Build configuration list for PBXNativeTarget "CGPoint+Vector" */;
 			buildPhases = (
-				D6BC94561974F1070004192F /* Sources */,
-				D6BC94571974F1070004192F /* Frameworks */,
-				D6BC94581974F1070004192F /* CopyFiles */,
+				D61E9D4619DAC56B00D2FE5B /* Sources */,
+				D61E9D4719DAC56B00D2FE5B /* Frameworks */,
+				D61E9D4819DAC56B00D2FE5B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -141,106 +122,104 @@
 			);
 			name = "CGPoint+Vector";
 			productName = "CGPoint+Vector";
-			productReference = D6BC945A1974F1070004192F /* libCGPoint+Vector.a */;
+			productReference = D61E9D4A19DAC56B00D2FE5B /* libCGPoint+Vector.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D6BC94691974F1080004192F /* CGPoint+Vector-Tests */ = {
+		D61E9D5419DAC56B00D2FE5B /* CGPoint+Vector-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6BC94801974F1080004192F /* Build configuration list for PBXNativeTarget "CGPoint+Vector-Tests" */;
+			buildConfigurationList = D61E9D5E19DAC56B00D2FE5B /* Build configuration list for PBXNativeTarget "CGPoint+Vector-Tests" */;
 			buildPhases = (
-				D6BC94661974F1080004192F /* Sources */,
-				D6BC94671974F1080004192F /* Frameworks */,
-				D6BC94681974F1080004192F /* Resources */,
+				D61E9D5119DAC56B00D2FE5B /* Sources */,
+				D61E9D5219DAC56B00D2FE5B /* Frameworks */,
+				D61E9D5319DAC56B00D2FE5B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D6BC94711974F1080004192F /* PBXTargetDependency */,
+				D61E9D6D19DAC71A00D2FE5B /* PBXTargetDependency */,
 			);
 			name = "CGPoint+Vector-Tests";
-			productName = "CGPoint+Vector";
-			productReference = D6BC946A1974F1080004192F /* CGPoint+Vector-Tests.xctest */;
+			productName = "CGPoint+VectorTests";
+			productReference = D61E9D5519DAC56B00D2FE5B /* CGPoint+VectorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D6BC94521974F1070004192F /* Project object */ = {
+		D61E9D4219DAC56B00D2FE5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = koherent.org;
+				TargetAttributes = {
+					D61E9D4919DAC56B00D2FE5B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					D61E9D5419DAC56B00D2FE5B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
 			};
-			buildConfigurationList = D6BC94551974F1070004192F /* Build configuration list for PBXProject "CGPoint+Vector" */;
+			buildConfigurationList = D61E9D4519DAC56B00D2FE5B /* Build configuration list for PBXProject "CGPoint+Vector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D6BC94511974F1070004192F;
-			productRefGroup = D6BC945B1974F1070004192F /* Products */;
+			mainGroup = D61E9D4119DAC56B00D2FE5B;
+			productRefGroup = D61E9D4B19DAC56B00D2FE5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6BC94591974F1070004192F /* CGPoint+Vector */,
-				D6BC94691974F1080004192F /* CGPoint+Vector-Tests */,
+				D61E9D4919DAC56B00D2FE5B /* CGPoint+Vector */,
+				D61E9D5419DAC56B00D2FE5B /* CGPoint+Vector-Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D6BC94681974F1080004192F /* Resources */ = {
+		D61E9D5319DAC56B00D2FE5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BC949F197533A30004192F /* CGPoint+Vector-Tests-Info.plist in Resources */,
-				D6BC94A1197533A30004192F /* InfoPlist.strings in Resources */,
+				D61E9D7719DAD45800D2FE5B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D6BC94561974F1070004192F /* Sources */ = {
+		D61E9D4619DAC56B00D2FE5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BC94991975339A0004192F /* CGPoint+Vector.m in Sources */,
+				D61E9D6919DAC69500D2FE5B /* CGPoint+Vector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6BC94661974F1080004192F /* Sources */ = {
+		D61E9D5119DAC56B00D2FE5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BC94A0197533A30004192F /* CGPoint+Vector-Tests.m in Sources */,
+				D61E9D6B19DAC6AD00D2FE5B /* CGPoint+Vector.swift in Sources */,
+				D61E9D7619DAD45800D2FE5B /* CGPoint_Vector_Tests.swift in Sources */,
+				D61E9D7519DAD45800D2FE5B /* CGPoint_Vector_Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D6BC94711974F1080004192F /* PBXTargetDependency */ = {
+		D61E9D6D19DAC71A00D2FE5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6BC94591974F1070004192F /* CGPoint+Vector */;
-			targetProxy = D6BC94701974F1080004192F /* PBXContainerItemProxy */;
+			target = D61E9D4919DAC56B00D2FE5B /* CGPoint+Vector */;
+			targetProxy = D61E9D6C19DAC71A00D2FE5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		D6BC949D197533A30004192F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6BC949E197533A30004192F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		D6BC947B1974F1080004192F /* Debug */ = {
+		D61E9D5919DAC56B00D2FE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,8 +234,10 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -271,13 +252,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		D6BC947C1974F1080004192F /* Release */ = {
+		D61E9D5A19DAC56B00D2FE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,9 +274,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -302,93 +286,92 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D6BC947E1974F1080004192F /* Debug */ = {
+		D61E9D5C19DAC56B00D2FE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "CGPoint+Vector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		D6BC947F1974F1080004192F /* Release */ = {
+		D61E9D5D19DAC56B00D2FE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "CGPoint+Vector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		D6BC94811974F1080004192F /* Debug */ = {
+		D61E9D5F19DAC56B00D2FE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "CGPoint+Vector-Tests/CGPoint+Vector-Tests-Info.plist";
-				PRODUCT_NAME = "CGPoint+Vector-Tests";
-				WRAPPER_EXTENSION = xctest;
+				INFOPLIST_FILE = "CGPoint+Vector-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		D6BC94821974F1080004192F /* Release */ = {
+		D61E9D6019DAC56B00D2FE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "CGPoint+Vector-Tests/CGPoint+Vector-Tests-Info.plist";
-				PRODUCT_NAME = "CGPoint+Vector-Tests";
-				WRAPPER_EXTENSION = xctest;
+				INFOPLIST_FILE = "CGPoint+Vector-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6BC94551974F1070004192F /* Build configuration list for PBXProject "CGPoint+Vector" */ = {
+		D61E9D4519DAC56B00D2FE5B /* Build configuration list for PBXProject "CGPoint+Vector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6BC947B1974F1080004192F /* Debug */,
-				D6BC947C1974F1080004192F /* Release */,
+				D61E9D5919DAC56B00D2FE5B /* Debug */,
+				D61E9D5A19DAC56B00D2FE5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6BC947D1974F1080004192F /* Build configuration list for PBXNativeTarget "CGPoint+Vector" */ = {
+		D61E9D5B19DAC56B00D2FE5B /* Build configuration list for PBXNativeTarget "CGPoint+Vector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6BC947E1974F1080004192F /* Debug */,
-				D6BC947F1974F1080004192F /* Release */,
+				D61E9D5C19DAC56B00D2FE5B /* Debug */,
+				D61E9D5D19DAC56B00D2FE5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6BC94801974F1080004192F /* Build configuration list for PBXNativeTarget "CGPoint+Vector-Tests" */ = {
+		D61E9D5E19DAC56B00D2FE5B /* Build configuration list for PBXNativeTarget "CGPoint+Vector-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6BC94811974F1080004192F /* Debug */,
-				D6BC94821974F1080004192F /* Release */,
+				D61E9D5F19DAC56B00D2FE5B /* Debug */,
+				D61E9D6019DAC56B00D2FE5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D6BC94521974F1070004192F /* Project object */;
+	rootObject = D61E9D4219DAC56B00D2FE5B /* Project object */;
 }
