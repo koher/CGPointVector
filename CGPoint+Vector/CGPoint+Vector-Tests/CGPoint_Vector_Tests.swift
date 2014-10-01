@@ -29,6 +29,11 @@ class CGPoint_Vector_Tests: XCTestCase {
 	
 	func testMultiply() {
 		XCTAssert((CGPoint(x: 1.0, y: -2.0) * 3.0).nearlyEqualTo(CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
+		XCTAssert((3.0 * CGPoint(x: 1.0, y: -2.0)).nearlyEqualTo(CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
+	}
+	
+	func testDivide() {
+		XCTAssert((CGPoint(x: 8.0, y: -2.0) / 4.0).nearlyEqualTo(CGPoint(x: 2.0, y: -0.5), epsilon: torelance))
 	}
 	
 	func testNegate() {

@@ -25,6 +25,12 @@ extension CGPoint {
 		}
 	}
 	
+	var phase: CGFloat {
+		get {
+			return atan2(self.y, self.x)
+		}
+	}
+	
 	func distanceFrom(point: CGPoint) -> CGFloat {
 		return (self - point).length
 	}
@@ -73,6 +79,10 @@ func * (left: CGPoint, right: CGFloat) -> CGPoint {
 
 func * (left: CGFloat, right: CGPoint) -> CGPoint {
 	return CGPoint(x: right.x * left, y: right.y * left)
+}
+
+func / (left: CGPoint, right: CGFloat) -> CGPoint {
+	return CGPoint(x: left.x / right, y: left.y / right)
 }
 
 func == (left: CGPoint, right: CGPoint) -> Bool {

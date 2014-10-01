@@ -4,6 +4,7 @@ CGPoint+Vector
 __CGPoint+Vector__ provides the extension for arithmetic operations with _CGPoint_ in both __Swift__ and __Objective-C__, which are convenient when _CGPoint_ values are used as vectors.
 
 ```swift
+// in Swift
 let a = CGPoint(x: 1, y: 2), b = CGPoint(x: -3, y: 5)
 
 let sum = a + b // (-2.0,7.0)
