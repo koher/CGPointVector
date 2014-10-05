@@ -2,33 +2,23 @@ import CoreGraphics
 
 extension CGPoint {
 	var description: String {
-		get {
-			return "( \(self.x), \(self.y) )"
-		}
+		return "( \(self.x), \(self.y) )"
 	}
 	
 	var length: CGFloat {
-		get {
-			return sqrt(self.squareLength)
-		}
+		return sqrt(self.squareLength)
 	}
 	
 	var squareLength: CGFloat {
-		get {
-			return self.x * self.x + self.y * self.y
-		}
+		return sqrt(self.squareLength)
 	}
 	
 	var unit: CGPoint {
-		get {
-			return self * (1.0 / self.length)
-		}
+		return self * (1.0 / self.length)
 	}
 	
 	var phase: CGFloat {
-		get {
-			return atan2(self.y, self.x)
-		}
+		return atan2(self.y, self.x)
 	}
 	
 	func distanceFrom(point: CGPoint) -> CGFloat {
@@ -91,9 +81,7 @@ func == (left: CGPoint, right: CGPoint) -> Bool {
 
 extension CGAffineTransform {
 	var inverse: CGAffineTransform {
-		get {
-			return CGAffineTransformInvert(self)
-		}
+		return CGAffineTransformInvert(self)
 	}
 	
 	func isIdentity() -> Bool {
@@ -119,6 +107,40 @@ func * (left: CGPoint, right: CGAffineTransform) -> CGPoint {
 
 func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
 	return CGAffineTransformEqualToTransform(left, right)
+}
+
+extension CGRect {
+	var width: CGFloat {
+		return CGRectGetWidth(self)
+	}
+	
+	var height: CGFloat {
+		return CGRectGetHeight(self)
+	}
+	
+	var minX: CGFloat {
+		return CGRectGetMinX(self)
+	}
+	
+	var minY: CGFloat {
+		return CGRectGetMinY(self)
+	}
+	
+	var maxX: CGFloat {
+		return CGRectGetMaxX(self)
+	}
+	
+	var maxY: CGFloat {
+		return CGRectGetMaxY(self)
+	}
+	
+	func contains(point: CGPoint) -> Bool {
+		return CGRectContainsPoint(self, point)
+	}
+	
+	func contains(rect: CGRect) -> Bool {
+		return CGRectContainsRect(self, rect)
+	}
 }
 
 extension CGFloat {
