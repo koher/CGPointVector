@@ -7,9 +7,10 @@ __CGPoint+Vector__ provides the extension for arithmetic operations with _CGPoin
 // in Swift
 let a = CGPoint(x: 1, y: 2), b = CGPoint(x: -3, y: 5)
 
-let sum = a + b // (-2.0,7.0)
-let distance = (a - b).length // 5.0
-let unitVector = (a - b).unit // (0.8,-0.6)
+let sum = a + b // ( -2.0, 7.0 )
+let distance = (b - a).length // 5.0
+let direction = (b - a).unit // ( -0.8, 0.6 )
+let rotated = a * CGAffineTransformMakeRotation(CGFloat.pi / 2) // ( -2.0, 1.0 )
 ```
 
 For Objective-C, the functions in CGPoint+Vector are optimized for both 32-bit and 64-bit _CGFloat_. They switch math functions used in their implementations at the compile time depending on the CPU architecture.

@@ -88,3 +88,43 @@ func / (left: CGPoint, right: CGFloat) -> CGPoint {
 func == (left: CGPoint, right: CGPoint) -> Bool {
 	return CGPointEqualToPoint(left, right)
 }
+
+extension CGAffineTransform {
+	var inverse: CGAffineTransform {
+		get {
+			return CGAffineTransformInvert(self)
+		}
+	}
+	
+	func isIdentity() -> Bool {
+		return CGAffineTransformIsIdentity(self)
+	}
+	
+	func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
+		return fabs(self.a - transform.a) < epsilon && fabs(self.b - transform.b) < epsilon && fabs(self.c - transform.c) < epsilon && fabs(self.d - transform.d) < epsilon && fabs(self.tx - transform.tx) < epsilon && fabs(self.ty - transform.ty) < epsilon
+	}
+}
+
+func * (left: CGAffineTransform, right: CGAffineTransform) -> CGAffineTransform {
+	return CGAffineTransformConcat(left, right)
+}
+
+func * (left: CGAffineTransform, right: CGPoint) -> CGPoint {
+	return CGPointApplyAffineTransform(right, left)
+}
+
+func * (left: CGPoint, right: CGAffineTransform) -> CGPoint {
+	return CGPointApplyAffineTransform(left, right)
+}
+
+func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
+	return CGAffineTransformEqualToTransform(left, right)
+}
+
+extension CGFloat {
+	static var pi: CGFloat {
+		get {
+			return CGFloat(M_PI)
+		}
+	}
+}

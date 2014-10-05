@@ -19,6 +19,10 @@ class CGPoint_Vector_Tests: XCTestCase {
 		XCTAssert(!CGPoint(x: 1.0, y: 2.0).nearlyEqualTo(CGPoint(x: 0.5, y: 2.0), epsilon: 0.5))
 	}
 	
+	func testDescription() {
+		XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).description, "( 1.0, 2.0 )")
+	}
+	
 	func testAdd() {
 		XCTAssert((CGPoint(x: 1.0, y: 2.0) + CGPoint(x: 3.0, y: -4.0)).nearlyEqualTo(CGPoint(x: 4.0, y: -2.0), epsilon: torelance))
 	}
@@ -30,6 +34,9 @@ class CGPoint_Vector_Tests: XCTestCase {
 	func testMultiply() {
 		XCTAssert((CGPoint(x: 1.0, y: -2.0) * 3.0).nearlyEqualTo(CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
 		XCTAssert((3.0 * CGPoint(x: 1.0, y: -2.0)).nearlyEqualTo(CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
+		
+		XCTAssert((CGPoint(x: 1.0, y: 1.0) * CGAffineTransformMakeRotation(CGFloat.pi / 4)).nearlyEqualTo(CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
+		XCTAssert((CGAffineTransformMakeTranslation(1.0, -2.0) * CGPoint(x: 1.0, y: 1.0)).nearlyEqualTo(CGPoint(x: 2.0, y: -1.0), epsilon: torelance))
 	}
 	
 	func testDivide() {
@@ -52,6 +59,10 @@ class CGPoint_Vector_Tests: XCTestCase {
 		XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).squareLength, 25.0, torelance)
 	}
 	
+	func testPhase() {
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: sqrt(3)).phase, CGFloat.pi / 3, torelance)
+	}
+	
 	func testDistance() {
 		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).distanceFrom(CGPoint(x: -3.0, y: 5.0)), 5.0, torelance)
 	}
@@ -65,11 +76,10 @@ class CGPoint_Vector_Tests: XCTestCase {
 	}
 	
 	func testAngleFrom() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).angleFrom(CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat(M_PI) / 6, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).angleFrom(CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat.pi / 6, torelance)
 	}
 	
 	func testCosOfAngleFrom() {
 		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).cosOfAngleFrom(CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, torelance)
 	}
-	
 }
