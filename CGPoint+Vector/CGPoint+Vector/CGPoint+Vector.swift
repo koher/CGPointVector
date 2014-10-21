@@ -125,6 +125,29 @@ func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
 	return CGAffineTransformEqualToTransform(left, right)
 }
 
+extension CGSize {
+	func nearlyEqualTo(point: CGSize, epsilon: CGFloat) -> Bool {
+		let difference = self - point
+		return fabs(difference.width) < epsilon && fabs(difference.height) < epsilon
+	}
+}
+
+func + (left: CGSize, right: CGSize) -> CGSize {
+	return CGSize(width: left.width + right.width, height: left.height + right.height)
+}
+
+func - (left: CGSize, right: CGSize) -> CGSize {
+	return CGSize(width: left.width - right.width, height: left.height - right.height)
+}
+
+func * (left: CGSize, right: CGAffineTransform) -> CGSize {
+	return CGSizeApplyAffineTransform(left, right)
+}
+
+func == (left: CGSize, right: CGSize) -> Bool {
+	return CGSizeEqualToSize(left, right)
+}
+
 extension CGRect {
 	var center: CGPoint {
 		return CGPoint(x: midX, y: midY)
