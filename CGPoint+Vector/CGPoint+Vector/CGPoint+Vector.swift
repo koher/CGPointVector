@@ -2,7 +2,7 @@ import CoreGraphics
 
 extension CGPoint {
 	var description: String {
-		return "( \(self.x), \(self.y) )"
+		return "(\(self.x), \(self.y))"
 	}
 	
 	var length: CGFloat {
@@ -109,44 +109,11 @@ func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
 	return CGAffineTransformEqualToTransform(left, right)
 }
 
-extension CGRect {
-	var width: CGFloat {
-		return CGRectGetWidth(self)
-	}
-	
-	var height: CGFloat {
-		return CGRectGetHeight(self)
-	}
-	
-	var minX: CGFloat {
-		return CGRectGetMinX(self)
-	}
-	
-	var minY: CGFloat {
-		return CGRectGetMinY(self)
-	}
-	
-	var maxX: CGFloat {
-		return CGRectGetMaxX(self)
-	}
-	
-	var maxY: CGFloat {
-		return CGRectGetMaxY(self)
-	}
-	
-	func contains(point: CGPoint) -> Bool {
-		return CGRectContainsPoint(self, point)
-	}
-	
-	func contains(rect: CGRect) -> Bool {
-		return CGRectContainsRect(self, rect)
-	}
-}
-
 extension CGFloat {
 	static var pi: CGFloat {
-		get {
-			return CGFloat(M_PI)
-		}
+		return CGFloat(M_PI)
+	}
+	static var e: CGFloat {
+		return CGFloat(M_E)
 	}
 }
