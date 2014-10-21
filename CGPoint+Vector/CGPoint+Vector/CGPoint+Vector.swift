@@ -125,6 +125,20 @@ func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
 	return CGAffineTransformEqualToTransform(left, right)
 }
 
+extension CGRect {
+	var center: CGPoint {
+		return CGPoint(x: midX, y: midY)
+	}
+}
+
+func * (left: CGRect, right: CGAffineTransform) -> CGRect {
+	return CGRectApplyAffineTransform(left, right)
+}
+
+func == (left: CGRect, right: CGRect) -> Bool {
+	return CGRectEqualToRect(left, right)
+}
+
 extension CGFloat {
 	static var pi: CGFloat {
 		return CGFloat(M_PI)
