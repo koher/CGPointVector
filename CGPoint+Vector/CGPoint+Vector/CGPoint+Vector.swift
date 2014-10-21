@@ -2,23 +2,23 @@ import CoreGraphics
 
 extension CGPoint {
 	var description: String {
-		return "(\(self.x), \(self.y))"
+		return "(\(x), \(y))"
 	}
 	
 	var length: CGFloat {
-		return sqrt(self.squareLength)
+		return sqrt(squareLength)
 	}
 	
 	var squareLength: CGFloat {
-		return sqrt(self.squareLength)
+		return x * x + y * y
 	}
 	
 	var unit: CGPoint {
-		return self * (1.0 / self.length)
+		return self * (1.0 / length)
 	}
 	
 	var phase: CGFloat {
-		return atan2(self.y, self.x)
+		return atan2(y, x)
 	}
 	
 	func distanceFrom(point: CGPoint) -> CGFloat {
@@ -30,7 +30,7 @@ extension CGPoint {
 	}
 	
 	func angleFrom(point: CGPoint) -> CGFloat {
-		return acos(self.cosOfAngleFrom(point))
+		return acos(cosOfAngleFrom(point))
 	}
 	
 	func cosOfAngleFrom(point: CGPoint) -> CGFloat {
@@ -79,6 +79,22 @@ func == (left: CGPoint, right: CGPoint) -> Bool {
 	return CGPointEqualToPoint(left, right)
 }
 
+func += (inout left: CGPoint, right: CGPoint) {
+	left = left + right
+}
+
+func -= (inout left: CGPoint, right: CGPoint) {
+	left = left - right
+}
+
+func *= (inout left: CGPoint, right: CGFloat) {
+	left = left * right
+}
+
+func /= (inout left: CGPoint, right: CGFloat) {
+	left = left / right
+}
+
 extension CGAffineTransform {
 	var inverse: CGAffineTransform {
 		return CGAffineTransformInvert(self)
@@ -89,7 +105,7 @@ extension CGAffineTransform {
 	}
 	
 	func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
-		return fabs(self.a - transform.a) < epsilon && fabs(self.b - transform.b) < epsilon && fabs(self.c - transform.c) < epsilon && fabs(self.d - transform.d) < epsilon && fabs(self.tx - transform.tx) < epsilon && fabs(self.ty - transform.ty) < epsilon
+		return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
 	}
 }
 
