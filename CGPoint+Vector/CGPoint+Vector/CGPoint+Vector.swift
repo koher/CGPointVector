@@ -144,6 +144,18 @@ func * (left: CGSize, right: CGAffineTransform) -> CGSize {
 	return CGSizeApplyAffineTransform(left, right)
 }
 
+func * (left: CGSize, right: CGFloat) -> CGSize {
+	return CGSize(width: left.width * right, height: left.height * right)
+}
+
+func * (left: CGFloat, right: CGSize) -> CGSize {
+	return CGSize(width: right.width * left, height: right.height * left)
+}
+
+func / (left: CGSize, right: CGFloat) -> CGSize {
+	return CGSize(width: left.width / right, height: left.height / right)
+}
+
 func == (left: CGSize, right: CGSize) -> Bool {
 	return CGSizeEqualToSize(left, right)
 }
@@ -169,4 +181,20 @@ extension CGFloat {
 	static var e: CGFloat {
 		return CGFloat(M_E)
 	}
+}
+
+func + (left: CGPoint, right: CGSize) -> CGPoint {
+	return CGPoint(x: left.x + right.width, y: left.y + right.height)
+}
+
+func + (left: CGSize, right: CGPoint) -> CGPoint {
+	return CGPoint(x: left.width + right.x, y: left.height + right.y)
+}
+
+func - (left: CGPoint, right: CGSize) -> CGPoint {
+	return CGPoint(x: left.x - right.width, y: left.y - right.height)
+}
+
+func - (left: CGSize, right: CGPoint) -> CGPoint {
+	return CGPoint(x: left.width - right.x, y: left.height - right.y)
 }
