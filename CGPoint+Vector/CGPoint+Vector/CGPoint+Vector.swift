@@ -1,43 +1,43 @@
 import CoreGraphics
 
-extension CGPoint {
-	var description: String {
+extension CGPoint: Printable {
+	public var description: String {
 		return "(\(x), \(y))"
 	}
 	
-	var length: CGFloat {
+	public var length: CGFloat {
 		return sqrt(squareLength)
 	}
 	
-	var squareLength: CGFloat {
+	public var squareLength: CGFloat {
 		return x * x + y * y
 	}
 	
-	var unit: CGPoint {
+	public var unit: CGPoint {
 		return self * (1.0 / length)
 	}
 	
-	var phase: CGFloat {
+	public var phase: CGFloat {
 		return atan2(y, x)
 	}
 	
-	func distanceFrom(point: CGPoint) -> CGFloat {
+	public func distanceFrom(point: CGPoint) -> CGFloat {
 		return (self - point).length
 	}
 	
-	func squareDistanceFrom(point: CGPoint) -> CGFloat {
+	public func squareDistanceFrom(point: CGPoint) -> CGFloat {
 		return (self - point).squareLength
 	}
 	
-	func angleFrom(point: CGPoint) -> CGFloat {
+	public func angleFrom(point: CGPoint) -> CGFloat {
 		return acos(cosOfAngleFrom(point))
 	}
 	
-	func cosOfAngleFrom(point: CGPoint) -> CGFloat {
+	public func cosOfAngleFrom(point: CGPoint) -> CGFloat {
 		return fmin(fmax(self * point / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
 	}
 	
-	func nearlyEqualTo(point: CGPoint, epsilon: CGFloat) -> Bool {
+	public func nearlyEqualTo(point: CGPoint, epsilon: CGFloat) -> Bool {
 		let difference = self - point
 		return fabs(difference.x) < epsilon && fabs(difference.y) < epsilon
 	}
@@ -95,16 +95,20 @@ func /= (inout left: CGPoint, right: CGFloat) {
 	left = left / right
 }
 
-extension CGAffineTransform {
-	var inverse: CGAffineTransform {
+extension CGAffineTransform: Printable {
+	public var description: String {
+		return "(\(a), \(b), \(c), \(d), \(tx), \(ty))"
+	}
+	
+	public var inverse: CGAffineTransform {
 		return CGAffineTransformInvert(self)
 	}
 	
-	func isIdentity() -> Bool {
+	public func isIdentity() -> Bool {
 		return CGAffineTransformIsIdentity(self)
 	}
 	
-	func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
+	public func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
 		return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
 	}
 }
@@ -125,8 +129,12 @@ func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
 	return CGAffineTransformEqualToTransform(left, right)
 }
 
-extension CGSize {
-	func nearlyEqualTo(point: CGSize, epsilon: CGFloat) -> Bool {
+extension CGSize: Printable {
+	public var description: String {
+		return "(\(width), \(height))"
+	}
+	
+	public func nearlyEqualTo(point: CGSize, epsilon: CGFloat) -> Bool {
 		let difference = self - point
 		return fabs(difference.width) < epsilon && fabs(difference.height) < epsilon
 	}
@@ -160,8 +168,12 @@ func == (left: CGSize, right: CGSize) -> Bool {
 	return CGSizeEqualToSize(left, right)
 }
 
-extension CGRect {
-	var center: CGPoint {
+extension CGRect: Printable {
+	public var description: String {
+		return "(\(origin.description), \(size.description))"
+	}
+	
+	public var center: CGPoint {
 		return CGPoint(x: midX, y: midY)
 	}
 }
@@ -175,10 +187,10 @@ func == (left: CGRect, right: CGRect) -> Bool {
 }
 
 extension CGFloat {
-	static var pi: CGFloat {
+	public static var pi: CGFloat {
 		return CGFloat(M_PI)
 	}
-	static var e: CGFloat {
+	public static var e: CGFloat {
 		return CGFloat(M_E)
 	}
 }
