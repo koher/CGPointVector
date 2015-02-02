@@ -1,6 +1,15 @@
 import CoreGraphics
 
-extension CGPoint: Printable {
+extension CGPoint: Printable, ArrayLiteralConvertible {
+	public init(arrayLiteral elements: CGFloat...) {
+		if elements.count != 2 {
+			fatalError("'arrayLiterl' must have 2 elements: \(elements)")
+		}
+		
+		x = elements[0]
+		y = elements[1]
+	}
+	
 	public var description: String {
 		return "(\(x), \(y))"
 	}
