@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		D61E9D4A19DAC56B00D2FE5B /* libCGPoint+Vector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCGPoint+Vector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61E9D5519DAC56B00D2FE5B /* CGPoint+VectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CGPoint+VectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61E9D5519DAC56B00D2FE5B /* CGPoint+VectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CGPoint+VectorTests.xctest"; path = "CGPoint+Vector-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61E9D6619DAC69500D2FE5B /* CGPoint+Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGPoint+Vector.h"; sourceTree = "<group>"; };
 		D61E9D6719DAC69500D2FE5B /* CGPoint+Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGPoint+Vector.m"; sourceTree = "<group>"; };
 		D61E9D6819DAC69500D2FE5B /* CGPoint+Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Vector.swift"; sourceTree = "<group>"; };
@@ -149,6 +149,8 @@
 		D61E9D4219DAC56B00D2FE5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = koherent.org;
 				TargetAttributes = {

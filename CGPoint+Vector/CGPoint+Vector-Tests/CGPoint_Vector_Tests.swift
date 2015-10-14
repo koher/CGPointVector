@@ -20,7 +20,7 @@ class CGPoint_Vector_Tests: XCTestCase {
 	}
 	
 	func testDescription() {
-		XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).description, "( 1.0, 2.0 )")
+		XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).description, "(1.0, 2.0)")
 	}
 	
 	func testAdd() {
@@ -52,34 +52,34 @@ class CGPoint_Vector_Tests: XCTestCase {
 	}
 	
 	func testLength() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).length, 5.0, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).length, 5.0, accuracy: torelance)
 	}
 	
 	func testSquareLength() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).squareLength, 25.0, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).squareLength, 25.0, accuracy: torelance)
 	}
 	
 	func testPhase() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: sqrt(3)).phase, CGFloat.pi / 3, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: sqrt(3)).phase, CGFloat.pi / 3, accuracy: torelance)
 	}
 	
 	func testDistance() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).distanceFrom(CGPoint(x: -3.0, y: 5.0)), 5.0, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).distanceFrom(CGPoint(x: -3.0, y: 5.0)), 5.0, accuracy: torelance)
 	}
 	
 	func testSquareDistance() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).squareDistanceFrom(CGPoint(x: -3.0, y: 5.0)), 25.0, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).squareDistanceFrom(CGPoint(x: -3.0, y: 5.0)), 25.0, accuracy: torelance)
 	}
 	
 	func testDotProduct() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0) * CGPoint(x: -3.0, y: 4.0), 5.0, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0) * CGPoint(x: -3.0, y: 4.0), 5.0, accuracy: torelance)
 	}
 	
 	func testAngleFrom() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).angleFrom(CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat.pi / 6, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).angleFrom(CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat.pi / 6, accuracy: torelance)
 	}
 	
 	func testCosOfAngleFrom() {
-		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).cosOfAngleFrom(CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, torelance)
+		XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).cosOfAngleFrom(CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
 	}
 }

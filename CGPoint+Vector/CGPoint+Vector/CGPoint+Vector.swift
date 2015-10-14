@@ -1,6 +1,6 @@
 import CoreGraphics
 
-extension CGPoint: Printable, ArrayLiteralConvertible {
+extension CGPoint: CustomStringConvertible, ArrayLiteralConvertible {
 	public init(arrayLiteral elements: CGFloat...) {
 		if elements.count != 2 {
 			fatalError("'arrayLiterl' must have 2 elements: \(elements)")
@@ -104,7 +104,7 @@ func /= (inout left: CGPoint, right: CGFloat) {
 	left = left / right
 }
 
-extension CGAffineTransform: Printable {
+extension CGAffineTransform: CustomStringConvertible {
 	public var description: String {
 		return "(\(a), \(b), \(c), \(d), \(tx), \(ty))"
 	}
@@ -138,7 +138,7 @@ func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
 	return CGAffineTransformEqualToTransform(left, right)
 }
 
-extension CGSize: Printable {
+extension CGSize: CustomStringConvertible {
 	public var description: String {
 		return "(\(width), \(height))"
 	}
@@ -177,7 +177,7 @@ func == (left: CGSize, right: CGSize) -> Bool {
 	return CGSizeEqualToSize(left, right)
 }
 
-extension CGRect: Printable {
+extension CGRect: CustomStringConvertible {
 	public var description: String {
 		return "(\(origin.description), \(size.description))"
 	}
