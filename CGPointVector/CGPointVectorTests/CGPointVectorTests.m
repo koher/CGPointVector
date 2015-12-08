@@ -1,14 +1,14 @@
 #import <XCTest/XCTest.h>
 
-#import "CGPoint+Vector.h"
+#import <CGPointVector/CGPointVector.h>
 
 static const CGFloat Torelance = 1.0e-5;
 
-@interface CGPoint_Vector_Tests : XCTestCase
+@interface CGPointVectorObjCTests : XCTestCase
 
 @end
 
-@implementation CGPoint_Vector_Tests
+@implementation CGPointVectorObjCTests
 
 - (void)setUp {
 	[super setUp];

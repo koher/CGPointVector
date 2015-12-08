@@ -1,6 +1,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+//! Project version number for CGPointVector.
+FOUNDATION_EXPORT double CGPointVectorVersionNumber;
+
+//! Project version string for CGPointVector.
+FOUNDATION_EXPORT const unsigned char CGPointVectorVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <CGPointVector/PublicHeader.h>
+
 FOUNDATION_EXPORT CGPoint CGPointAdd(CGPoint point1, CGPoint point2);
 FOUNDATION_EXPORT CGPoint CGPointSubtract(CGPoint point1, CGPoint point2);
 FOUNDATION_EXPORT CGPoint CGPointMultiply(CGPoint point, CGFloat k);

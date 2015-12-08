@@ -1,17 +1,17 @@
-import UIKit
 import XCTest
+@testable import CGPointVector
 
-class CGPoint_Vector_Tests: XCTestCase {
+class CGPointVectorTests: XCTestCase {
 	let torelance: CGFloat = 1.0e-5;
-
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-
+	
+	override func setUp() {
+		super.setUp()
+	}
+	
+	override func tearDown() {
+		super.tearDown()
+	}
+	
 	func testNearlyEqualTo() {
 		XCTAssert(CGPoint(x: 1.0, y: 2.0).nearlyEqualTo(CGPoint(x: 1.0, y: 2.9), epsilon: 1.0))
 		XCTAssert(!CGPoint(x: 1.0, y: 2.0).nearlyEqualTo(CGPoint(x: 1.0, y: 3.0), epsilon: 1.0))
