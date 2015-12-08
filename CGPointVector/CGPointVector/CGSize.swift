@@ -13,6 +13,14 @@ extension CGSize: CustomStringConvertible {
     }
 }
 
+public prefix func + (value: CGSize) -> CGSize {
+    return value
+}
+
+public prefix func - (value: CGSize) -> CGSize {
+    return CGSize(width: -value.width, height: -value.height)
+}
+
 public func + (left: CGSize, right: CGSize) -> CGSize {
     return CGSize(width: left.width + right.width, height: left.height + right.height)
 }
@@ -37,8 +45,20 @@ public func / (left: CGSize, right: CGFloat) -> CGSize {
     return CGSize(width: left.width / right, height: left.height / right)
 }
 
-public func == (left: CGSize, right: CGSize) -> Bool {
-    return CGSizeEqualToSize(left, right)
+public func += (inout left: CGSize, right: CGSize) {
+    left = left + right
+}
+
+public func -= (inout left: CGSize, right: CGSize) {
+    left = left - right
+}
+
+public func *= (inout left: CGSize, right: CGFloat) {
+    left = left * right
+}
+
+public func /= (inout left: CGSize, right: CGFloat) {
+    left = left / right
 }
 
 public func + (left: CGPoint, right: CGSize) -> CGPoint {

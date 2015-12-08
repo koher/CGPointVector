@@ -1,6 +1,11 @@
 import CoreGraphics
 
 extension CGPoint {
+    public func nearlyEqualTo(point: CGPoint, epsilon: CGFloat) -> Bool {
+        let difference = self - point
+        return fabs(difference.x) < epsilon && fabs(difference.y) < epsilon
+    }
+    
     public var length: CGFloat {
         return sqrt(squareLength)
     }
@@ -31,11 +36,6 @@ extension CGPoint {
     
     public func cosOfAngleFrom(point: CGPoint) -> CGFloat {
         return fmin(fmax(self * point / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
-    }
-    
-    public func nearlyEqualTo(point: CGPoint, epsilon: CGFloat) -> Bool {
-        let difference = self - point
-        return fabs(difference.x) < epsilon && fabs(difference.y) < epsilon
     }
 }
 
@@ -77,10 +77,6 @@ public func / (left: CGPoint, right: CGFloat) -> CGPoint {
     return CGPoint(x: left.x / right, y: left.y / right)
 }
 
-public func == (left: CGPoint, right: CGPoint) -> Bool {
-    return CGPointEqualToPoint(left, right)
-}
-
 public func += (inout left: CGPoint, right: CGPoint) {
     left = left + right
 }
@@ -95,8 +91,4 @@ public func *= (inout left: CGPoint, right: CGFloat) {
 
 public func /= (inout left: CGPoint, right: CGFloat) {
     left = left / right
-}
-
-public func == (left: CGAffineTransform, right: CGAffineTransform) -> Bool {
-    return CGAffineTransformEqualToTransform(left, right)
 }

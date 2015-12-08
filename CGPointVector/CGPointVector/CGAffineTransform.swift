@@ -1,16 +1,16 @@
 import CoreGraphics
 
 extension CGAffineTransform {
+    public func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
+        return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
+    }
+    
     public var inverse: CGAffineTransform {
         return CGAffineTransformInvert(self)
     }
     
     public func isIdentity() -> Bool {
         return CGAffineTransformIsIdentity(self)
-    }
-    
-    public func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
-        return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
     }
 }
 
@@ -30,4 +30,8 @@ public func * (left: CGAffineTransform, right: CGPoint) -> CGPoint {
 
 public func * (left: CGPoint, right: CGAffineTransform) -> CGPoint {
     return CGPointApplyAffineTransform(left, right)
+}
+
+public func *= (inout left: CGAffineTransform, right: CGAffineTransform) {
+    left = left * right
 }

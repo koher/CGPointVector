@@ -11,4 +11,12 @@ class CGFloatTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+    
+    func testPi() {
+        XCTAssertEqual(CGFloat.pi, CGFloat(M_PI))
+    }
+    
+    func testE() {
+        XCTAssertEqual(CGFloat.e, CGFloat(M_E))
+    }
 }
