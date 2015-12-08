@@ -1,10 +1,6 @@
 import CoreGraphics
 
-extension CGPoint: CustomStringConvertible {
-    public var description: String {
-        return "(\(x), \(y))"
-    }
-    
+extension CGPoint {
     public var length: CGFloat {
         return sqrt(squareLength)
     }
@@ -40,6 +36,12 @@ extension CGPoint: CustomStringConvertible {
     public func nearlyEqualTo(point: CGPoint, epsilon: CGFloat) -> Bool {
         let difference = self - point
         return fabs(difference.x) < epsilon && fabs(difference.y) < epsilon
+    }
+}
+
+extension CGPoint: CustomStringConvertible {
+    public var description: String {
+        return "(\(x), \(y))"
     }
 }
 

@@ -1,10 +1,6 @@
 import CoreGraphics
 
-extension CGAffineTransform: CustomStringConvertible {
-    public var description: String {
-        return "(\(a), \(b), \(c), \(d), \(tx), \(ty))"
-    }
-    
+extension CGAffineTransform {
     public var inverse: CGAffineTransform {
         return CGAffineTransformInvert(self)
     }
@@ -15,6 +11,12 @@ extension CGAffineTransform: CustomStringConvertible {
     
     public func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
         return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
+    }
+}
+
+extension CGAffineTransform: CustomStringConvertible {
+    public var description: String {
+        return "(\(a), \(b), \(c), \(d), \(tx), \(ty))"
     }
 }
 

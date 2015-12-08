@@ -1,12 +1,14 @@
 import CoreGraphics
 
+extension CGRect {
+    public var center: CGPoint {
+        return CGPoint(x: midX, y: midY)
+    }
+}
+
 extension CGRect: CustomStringConvertible {
     public var description: String {
         return "(\(origin.description), \(size.description))"
-    }
-    
-    public var center: CGPoint {
-        return CGPoint(x: midX, y: midY)
     }
 }
 

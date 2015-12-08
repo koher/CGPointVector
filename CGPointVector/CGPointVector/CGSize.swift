@@ -1,13 +1,15 @@
 import CoreGraphics
 
-extension CGSize: CustomStringConvertible {
-    public var description: String {
-        return "(\(width), \(height))"
-    }
-    
+extension CGSize {
     public func nearlyEqualTo(point: CGSize, epsilon: CGFloat) -> Bool {
         let difference = self - point
         return fabs(difference.width) < epsilon && fabs(difference.height) < epsilon
+    }
+}
+
+extension CGSize: CustomStringConvertible {
+    public var description: String {
+        return "(\(width), \(height))"
     }
 }
 
