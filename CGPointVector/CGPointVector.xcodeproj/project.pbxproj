@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		D63BC3181C159EA70071D0E2 /* CGPointVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D63BC3171C159EA70071D0E2 /* CGPointVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D63BC31F1C159EA70071D0E2 /* CGPointVector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63BC3141C159EA70071D0E2 /* CGPointVector.framework */; };
-		D63BC3241C159EA70071D0E2 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3231C159EA70071D0E2 /* CGPointVectorTests.swift */; };
 		D63BC3301C159EBF0071D0E2 /* CGPointVector.m in Sources */ = {isa = PBXBuildFile; fileRef = D63BC32E1C159EBF0071D0E2 /* CGPointVector.m */; };
-		D63BC3311C159EBF0071D0E2 /* CGPointVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC32F1C159EBF0071D0E2 /* CGPointVector.swift */; };
+		D63BC3311C159EBF0071D0E2 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC32F1C159EBF0071D0E2 /* CGPoint.swift */; };
 		D63BC3341C159F740071D0E2 /* CGPointVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3331C159F740071D0E2 /* CGPointVectorTests.m */; };
+		D63BC3361C16AC410071D0E2 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3351C16AC410071D0E2 /* CGSize.swift */; };
+		D63BC3381C16AC6D0071D0E2 /* CGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3371C16AC6D0071D0E2 /* CGAffineTransform.swift */; };
+		D63BC33A1C16ACB40071D0E2 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3391C16ACB40071D0E2 /* CGRect.swift */; };
+		D63BC33C1C16ACE70071D0E2 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC33B1C16ACE70071D0E2 /* CGFloat.swift */; };
+		D63BC33E1C16ADF60071D0E2 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC33D1C16ADF60071D0E2 /* CGPointTests.swift */; };
+		D63BC3401C16AE1B0071D0E2 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC33F1C16AE1B0071D0E2 /* CGFloatTests.swift */; };
+		D63BC3421C16AE330071D0E2 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3411C16AE330071D0E2 /* CGRectTests.swift */; };
+		D63BC3441C16B9290071D0E2 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3431C16B9290071D0E2 /* CGAffineTransormTests.swift */; };
+		D63BC3461C16B93D0071D0E2 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BC3451C16B93D0071D0E2 /* CGSizeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +38,20 @@
 		D63BC3171C159EA70071D0E2 /* CGPointVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGPointVector.h; sourceTree = "<group>"; };
 		D63BC3191C159EA70071D0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63BC31E1C159EA70071D0E2 /* CGPointVectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGPointVectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D63BC3231C159EA70071D0E2 /* CGPointVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointVectorTests.swift; sourceTree = "<group>"; };
 		D63BC3251C159EA70071D0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63BC32E1C159EBF0071D0E2 /* CGPointVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointVector.m; sourceTree = "<group>"; };
-		D63BC32F1C159EBF0071D0E2 /* CGPointVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointVector.swift; sourceTree = "<group>"; };
+		D63BC32F1C159EBF0071D0E2 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		D63BC3321C159F740071D0E2 /* CGPointVectorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGPointVectorTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D63BC3331C159F740071D0E2 /* CGPointVectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointVectorTests.m; sourceTree = "<group>"; };
+		D63BC3351C16AC410071D0E2 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		D63BC3371C16AC6D0071D0E2 /* CGAffineTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransform.swift; sourceTree = "<group>"; };
+		D63BC3391C16ACB40071D0E2 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		D63BC33B1C16ACE70071D0E2 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		D63BC33D1C16ADF60071D0E2 /* CGPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		D63BC33F1C16AE1B0071D0E2 /* CGFloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
+		D63BC3411C16AE330071D0E2 /* CGRectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
+		D63BC3431C16B9290071D0E2 /* CGAffineTransormTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransormTests.swift; sourceTree = "<group>"; };
+		D63BC3451C16B93D0071D0E2 /* CGSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +96,11 @@
 			children = (
 				D63BC3171C159EA70071D0E2 /* CGPointVector.h */,
 				D63BC32E1C159EBF0071D0E2 /* CGPointVector.m */,
-				D63BC32F1C159EBF0071D0E2 /* CGPointVector.swift */,
+				D63BC3371C16AC6D0071D0E2 /* CGAffineTransform.swift */,
+				D63BC33B1C16ACE70071D0E2 /* CGFloat.swift */,
+				D63BC32F1C159EBF0071D0E2 /* CGPoint.swift */,
+				D63BC3391C16ACB40071D0E2 /* CGRect.swift */,
+				D63BC3351C16AC410071D0E2 /* CGSize.swift */,
 				D63BC3191C159EA70071D0E2 /* Info.plist */,
 			);
 			path = CGPointVector;
@@ -89,10 +109,14 @@
 		D63BC3221C159EA70071D0E2 /* CGPointVectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				D63BC3331C159F740071D0E2 /* CGPointVectorTests.m */,
-				D63BC3231C159EA70071D0E2 /* CGPointVectorTests.swift */,
-				D63BC3251C159EA70071D0E2 /* Info.plist */,
 				D63BC3321C159F740071D0E2 /* CGPointVectorTests-Bridging-Header.h */,
+				D63BC3331C159F740071D0E2 /* CGPointVectorTests.m */,
+				D63BC3431C16B9290071D0E2 /* CGAffineTransormTests.swift */,
+				D63BC33F1C16AE1B0071D0E2 /* CGFloatTests.swift */,
+				D63BC33D1C16ADF60071D0E2 /* CGPointTests.swift */,
+				D63BC3411C16AE330071D0E2 /* CGRectTests.swift */,
+				D63BC3451C16B93D0071D0E2 /* CGSizeTests.swift */,
+				D63BC3251C159EA70071D0E2 /* Info.plist */,
 			);
 			path = CGPointVectorTests;
 			sourceTree = "<group>";
@@ -205,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63BC33C1C16ACE70071D0E2 /* CGFloat.swift in Sources */,
 				D63BC3301C159EBF0071D0E2 /* CGPointVector.m in Sources */,
-				D63BC3311C159EBF0071D0E2 /* CGPointVector.swift in Sources */,
+				D63BC3381C16AC6D0071D0E2 /* CGAffineTransform.swift in Sources */,
+				D63BC33A1C16ACB40071D0E2 /* CGRect.swift in Sources */,
+				D63BC3361C16AC410071D0E2 /* CGSize.swift in Sources */,
+				D63BC3311C159EBF0071D0E2 /* CGPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D63BC3241C159EA70071D0E2 /* CGPointVectorTests.swift in Sources */,
+				D63BC3401C16AE1B0071D0E2 /* CGFloatTests.swift in Sources */,
+				D63BC3421C16AE330071D0E2 /* CGRectTests.swift in Sources */,
+				D63BC33E1C16ADF60071D0E2 /* CGPointTests.swift in Sources */,
+				D63BC3441C16B9290071D0E2 /* CGAffineTransormTests.swift in Sources */,
+				D63BC3461C16B93D0071D0E2 /* CGSizeTests.swift in Sources */,
 				D63BC3341C159F740071D0E2 /* CGPointVectorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +430,7 @@
 				D63BC32A1C159EA70071D0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D63BC32B1C159EA70071D0E2 /* Build configuration list for PBXNativeTarget "CGPointVectorTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +439,7 @@
 				D63BC32D1C159EA70071D0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
