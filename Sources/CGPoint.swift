@@ -1,7 +1,7 @@
 import CoreGraphics
 
 extension CGPoint {
-    public func nearlyEqualTo(_ point: CGPoint, epsilon: CGFloat) -> Bool {
+    public func nearlyEqual(to point: CGPoint, epsilon: CGFloat) -> Bool {
         let difference = self - point
         return fabs(difference.x) < epsilon && fabs(difference.y) < epsilon
     }
@@ -22,19 +22,19 @@ extension CGPoint {
         return atan2(y, x)
     }
     
-    public func distanceFrom(_ point: CGPoint) -> CGFloat {
+    public func distance(from point: CGPoint) -> CGFloat {
         return (self - point).length
     }
     
-    public func squareDistanceFrom(_ point: CGPoint) -> CGFloat {
+    public func squareDistance(from point: CGPoint) -> CGFloat {
         return (self - point).squareLength
     }
     
-    public func angleFrom(_ point: CGPoint) -> CGFloat {
-        return acos(cosOfAngleFrom(point))
+    public func angle(from point: CGPoint) -> CGFloat {
+        return acos(cos(angleFrom: point))
     }
     
-    public func cosOfAngleFrom(_ point: CGPoint) -> CGFloat {
+    public func cos(angleFrom point: CGPoint) -> CGFloat {
         return fmin(fmax(self * point / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
     }
 }

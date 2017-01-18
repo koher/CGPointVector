@@ -1,7 +1,7 @@
 import CoreGraphics
 
 extension CGRect {
-    public func nearlyEqualTo(_ rect: CGRect, epsilon: CGFloat) -> Bool {
+    public func nearlyEqual(to rect: CGRect, epsilon: CGFloat) -> Bool {
         let difference1 = self.origin - rect.origin
         let difference2 = (self.origin + self.size) - (rect.origin + rect.size)
         return fabs(difference1.x) < epsilon && fabs(difference1.y) < epsilon
