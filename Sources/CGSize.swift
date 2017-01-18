@@ -1,7 +1,7 @@
 import CoreGraphics
 
 extension CGSize {
-    public func nearlyEqualTo(point: CGSize, epsilon: CGFloat) -> Bool {
+    public func nearlyEqual(to point: CGSize, epsilon: CGFloat) -> Bool {
         let difference = self - point
         return fabs(difference.width) < epsilon && fabs(difference.height) < epsilon
     }
@@ -30,7 +30,7 @@ public func - (left: CGSize, right: CGSize) -> CGSize {
 }
 
 public func * (left: CGSize, right: CGAffineTransform) -> CGSize {
-    return CGSizeApplyAffineTransform(left, right)
+    return left.applying(right)
 }
 
 public func * (left: CGSize, right: CGFloat) -> CGSize {
@@ -45,19 +45,19 @@ public func / (left: CGSize, right: CGFloat) -> CGSize {
     return CGSize(width: left.width / right, height: left.height / right)
 }
 
-public func += (inout left: CGSize, right: CGSize) {
+public func += (left: inout CGSize, right: CGSize) {
     left = left + right
 }
 
-public func -= (inout left: CGSize, right: CGSize) {
+public func -= (left: inout CGSize, right: CGSize) {
     left = left - right
 }
 
-public func *= (inout left: CGSize, right: CGFloat) {
+public func *= (left: inout CGSize, right: CGFloat) {
     left = left * right
 }
 
-public func /= (inout left: CGSize, right: CGFloat) {
+public func /= (left: inout CGSize, right: CGFloat) {
     left = left / right
 }
 

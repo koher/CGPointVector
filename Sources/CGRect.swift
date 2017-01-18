@@ -1,7 +1,7 @@
 import CoreGraphics
 
 extension CGRect {
-    public func nearlyEqualTo(rect: CGRect, epsilon: CGFloat) -> Bool {
+    public func nearlyEqual(to rect: CGRect, epsilon: CGFloat) -> Bool {
         let difference1 = self.origin - rect.origin
         let difference2 = (self.origin + self.size) - (rect.origin + rect.size)
         return fabs(difference1.x) < epsilon && fabs(difference1.y) < epsilon
@@ -20,5 +20,5 @@ extension CGRect: CustomStringConvertible {
 }
 
 public func * (left: CGRect, right: CGAffineTransform) -> CGRect {
-    return CGRectApplyAffineTransform(left, right)
+    return left.applying(right)
 }
