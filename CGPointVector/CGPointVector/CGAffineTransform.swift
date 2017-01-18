@@ -1,16 +1,16 @@
 import CoreGraphics
 
 extension CGAffineTransform {
-    public func nearlyEqualTo(transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
+    public func nearlyEqualTo(_ transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
         return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
     }
     
     public var inverse: CGAffineTransform {
-        return CGAffineTransformInvert(self)
+        return self.inverted()
     }
     
     public func isIdentity() -> Bool {
-        return CGAffineTransformIsIdentity(self)
+        return self.isIdentity
     }
 }
 
@@ -21,17 +21,17 @@ extension CGAffineTransform: CustomStringConvertible {
 }
 
 public func * (left: CGAffineTransform, right: CGAffineTransform) -> CGAffineTransform {
-    return CGAffineTransformConcat(left, right)
+    return left.concatenating(right)
 }
 
 public func * (left: CGAffineTransform, right: CGPoint) -> CGPoint {
-    return CGPointApplyAffineTransform(right, left)
+    return right.applying(left)
 }
 
 public func * (left: CGPoint, right: CGAffineTransform) -> CGPoint {
-    return CGPointApplyAffineTransform(left, right)
+    return left.applying(right)
 }
 
-public func *= (inout left: CGAffineTransform, right: CGAffineTransform) {
+public func *= (left: inout CGAffineTransform, right: CGAffineTransform) {
     left = left * right
 }
