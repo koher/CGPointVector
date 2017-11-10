@@ -26,7 +26,16 @@ let dotProduct = a * b // 26.0
 ### Swift Package Manager
 
 ```swift
-.Package( url: "https://github.com/koher/CGPointVector.git", "0.1.0")
+.package(
+    url: "https://github.com/koher/CGPointVector.git",
+    from: "0.2.0"
+)
+```
+
+### Carthage
+
+```
+github "koher/CGPointVector" ~> 0.2.0
 ```
 
 ## License
