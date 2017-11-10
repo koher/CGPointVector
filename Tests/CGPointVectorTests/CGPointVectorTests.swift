@@ -13,7 +13,7 @@ class CGPointVectorTests: XCTestCase {
         let rotated = a * CGAffineTransform(rotationAngle: CGFloat.pi / 2) // (-2.0, 1.0)
 
         /**/ XCTAssertTrue(sum.nearlyEqual(to: CGPoint(x: -2.0, y: 7.0), epsilon: torelance))
-        /**/ XCTAssertEqualWithAccuracy(distance, 5.0, accuracy: torelance)
+        /**/ XCTAssertEqual(distance, 5.0, accuracy: torelance)
         /**/ XCTAssertTrue(direction.nearlyEqual(to: CGPoint(x: -0.8, y: 0.6), epsilon: torelance))
         /**/ XCTAssertTrue(rotated.nearlyEqual(to: CGPoint(x: -2.0, y: 1.0), epsilon: torelance))
     }
@@ -29,10 +29,10 @@ class CGPointVectorTests: XCTestCase {
         let dotProduct = a * b // 26.0
 
         /**/ XCTAssertTrue(sum.nearlyEqual(to: CGPoint(x: 5.0, y: -9.0), epsilon: torelance))
-        /**/ XCTAssertEqualWithAccuracy(length, 5.0, accuracy: torelance)
-        /**/ XCTAssertEqualWithAccuracy(distance, 1.4142135623731, accuracy: torelance)
+        /**/ XCTAssertEqual(length, 5.0, accuracy: torelance)
+        /**/ XCTAssertEqual(distance, 1.4142135623731, accuracy: torelance)
         /**/ XCTAssertTrue(unitVector.nearlyEqual(to: CGPoint(x: 0.6, y: -0.8), epsilon: torelance))
-        /**/ XCTAssertEqualWithAccuracy(dotProduct, 26.0, accuracy: torelance)
+        /**/ XCTAssertEqual(dotProduct, 26.0, accuracy: torelance)
     }
     
     static var allTests : [(String, (CGPointVectorTests) -> () throws -> Void)] {

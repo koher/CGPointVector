@@ -17,11 +17,11 @@ class CGPointTests: XCTestCase {
     }
     
     func testLength() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).length, 5.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 3.0, y: -4.0).length, 5.0, accuracy: torelance)
     }
     
     func testSquareLength() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 3.0, y: -4.0).squareLength, 25.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 3.0, y: -4.0).squareLength, 25.0, accuracy: torelance)
     }
     
     func testUnit() {
@@ -29,23 +29,23 @@ class CGPointTests: XCTestCase {
     }
     
     func testPhase() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: sqrt(3)).phase, CGFloat.pi / 3, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: sqrt(3)).phase, CGFloat.pi / 3, accuracy: torelance)
     }
     
     func testDistance() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).distance(from: CGPoint(x: -3.0, y: 5.0)), 5.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).distance(from: CGPoint(x: -3.0, y: 5.0)), 5.0, accuracy: torelance)
     }
     
     func testSquareDistance() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0).squareDistance(from: CGPoint(x: -3.0, y: 5.0)), 25.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).squareDistance(from: CGPoint(x: -3.0, y: 5.0)), 25.0, accuracy: torelance)
     }
     
     func testAngle() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).angle(from: CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat.pi / 6, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).angle(from: CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat.pi / 6, accuracy: torelance)
     }
     
     func testCosOfAngle() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 0.0).cos(angleFrom: CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).cos(angleFrom: CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
     }
     
     func testDescription() {
@@ -69,7 +69,7 @@ class CGPointTests: XCTestCase {
     }
     
     func testMultiply() {
-        XCTAssertEqualWithAccuracy(CGPoint(x: 1.0, y: 2.0) * CGPoint(x: -3.0, y: 4.0), 5.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 2.0) * CGPoint(x: -3.0, y: 4.0), 5.0, accuracy: torelance)
     }
     
     func testMultiplyByFloat() {
