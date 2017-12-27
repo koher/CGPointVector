@@ -88,12 +88,15 @@ class CGSizeTests: XCTestCase {
             ("testPrefixPlus", testPrefixPlus),
             ("testNegate", testNegate),
             ("testAdd", testAdd),
+            ("testSubtract", testSubtract),
             ("testMultiply", testMultiply),
             ("testDivide", testDivide),
             ("testAdditionAssignment", testAdditionAssignment),
             ("testSuntractionAssignment", testSuntractionAssignment),
             ("testMultiplicationAssignment", testMultiplicationAssignment),
             ("testDivisionAssignment", testDivisionAssignment),
+            ("testAddWithPoint", testAddWithPoint),
+            ("testSubtractWithPoint", testSubtractWithPoint),
         ]
     }
 }

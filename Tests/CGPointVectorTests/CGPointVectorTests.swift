@@ -38,6 +38,7 @@ class CGPointVectorTests: XCTestCase {
     static var allTests : [(String, (CGPointVectorTests) -> () throws -> Void)] {
         return [
             ("testExample", testExample),
+            ("testUsage", testUsage),
         ]
     }
 }

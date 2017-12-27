@@ -47,7 +47,6 @@ class CGRectTests: XCTestCase {
             ("testCenter", testCenter),
             ("testDescription", testDescription),
             ("testMultiply", testMultiply),
-            ("testMultiply", testMultiply),
         ]
     }
 }

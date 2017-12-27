@@ -65,11 +65,6 @@ class CGAffineTransormTests: XCTestCase {
             .nearlyEqual(to: CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).inverted(), epsilon: torelance))
     }
     
-    func testIsIdentity() {
-        XCTAssertTrue(CGAffineTransform.identity.isIdentity)
-        XCTAssertFalse(CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).isIdentity)
-    }
-    
     func testDescription() {
         XCTAssertEqual(CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).description, "(1.0, 2.0, 3.0, 4.0, 5.0, 6.0)")
     }
@@ -103,7 +98,6 @@ class CGAffineTransormTests: XCTestCase {
         return [
             ("testNearlyEqual", testNearlyEqual),
             ("testInverse", testInverse),
-            ("testIsIdentity", testIsIdentity),
             ("testDescription", testDescription),
             ("testMultiply", testMultiply),
             ("testMultiplyByPoint", testMultiplyByPoint),
