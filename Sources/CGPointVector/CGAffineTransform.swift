@@ -8,10 +8,6 @@ extension CGAffineTransform {
     public var inverse: CGAffineTransform {
         return self.inverted()
     }
-    
-    public func isIdentity() -> Bool {
-        return self.isIdentity
-    }
 }
 
 extension CGAffineTransform: CustomStringConvertible {
