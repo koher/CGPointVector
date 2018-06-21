@@ -60,11 +60,6 @@ class CGAffineTransormTests: XCTestCase {
             .isNearlyEqual(to: CGAffineTransform(a: 1.0, b: 2.0, c: 3.0, d: 4.0, tx: 5.0, ty: 7.0), epsilon: 1.0))
     }
 
-    func testInverse() {
-        XCTAssertTrue(CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).inverse
-            .isNearlyEqual(to: CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).inverted(), epsilon: torelance))
-    }
-    
     func testDescription() {
         XCTAssertEqual(CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).description, "(1.0, 2.0, 3.0, 4.0, 5.0, 6.0)")
     }
@@ -88,7 +83,6 @@ class CGAffineTransormTests: XCTestCase {
     static var allTests : [(String, (CGAffineTransormTests) -> () throws -> Void)] {
         return [
             ("testisNearlyEqual", testisNearlyEqual),
-            ("testInverse", testInverse),
             ("testDescription", testDescription),
             ("testMatmul", testMatmul),
             ("testMatmulAssignment", testMatmulAssignment),
