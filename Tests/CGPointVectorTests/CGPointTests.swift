@@ -45,7 +45,7 @@ class CGPointTests: XCTestCase {
     }
     
     func testCosOfAngle() {
-        XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).cos(angleFrom: CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).cos(from: CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
     }
     
     func testDescription() {

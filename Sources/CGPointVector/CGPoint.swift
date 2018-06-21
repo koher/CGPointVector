@@ -31,10 +31,10 @@ extension CGPoint {
     }
     
     public func angle(from point: CGPoint) -> CGFloat {
-        return acos(cos(angleFrom: point))
+        return acos(cos(from: point))
     }
     
-    public func cos(angleFrom point: CGPoint) -> CGFloat {
+    public func cos(from point: CGPoint) -> CGFloat {
         return fmin(fmax(self * point / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
     }
 }
