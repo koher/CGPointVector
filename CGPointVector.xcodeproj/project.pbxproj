@@ -49,6 +49,13 @@
 		D63F165920DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
 		D63F165A20DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
 		D63F165B20DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
+		D63F165D20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F165E20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F165F20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F166020DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F166220DB64CE00F8B479 /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F166120DB64CE00F8B479 /* CGVectorTests.swift */; };
+		D63F166320DB64CE00F8B479 /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F166120DB64CE00F8B479 /* CGVectorTests.swift */; };
+		D63F166420DB64CE00F8B479 /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F166120DB64CE00F8B479 /* CGVectorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,8 @@
 		D62C6DEA1FB5657000E7DF02 /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		D62C6DEB1FB5657000E7DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63F165720DB574100F8B479 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		D63F165C20DB641300F8B479 /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		D63F166120DB64CE00F8B479 /* CGVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVectorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +204,7 @@
 				D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */,
 				D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */,
 				D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */,
+				D63F166120DB64CE00F8B479 /* CGVectorTests.swift */,
 				D62C6DE21FB5657000E7DF02 /* Info.plist */,
 			);
 			path = CGPointVectorTests;
@@ -216,6 +226,7 @@
 				D62C6DE81FB5657000E7DF02 /* CGPointVector.h */,
 				D62C6DE91FB5657000E7DF02 /* CGRect.swift */,
 				D62C6DEA1FB5657000E7DF02 /* CGSize.swift */,
+				D63F165C20DB641300F8B479 /* CGVector.swift */,
 				D62C6DEB1FB5657000E7DF02 /* Info.plist */,
 				D63F165720DB574100F8B479 /* Operators.swift */,
 			);
@@ -508,6 +519,7 @@
 			files = (
 				D62C6DF01FB5657900E7DF02 /* CGSize.swift in Sources */,
 				D63F165820DB574100F8B479 /* Operators.swift in Sources */,
+				D63F165D20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DED1FB5657900E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DEF1FB5657900E7DF02 /* CGRect.swift in Sources */,
 				D62C6DEC1FB5657900E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -520,6 +532,7 @@
 			files = (
 				D62C6E011FB5658A00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E021FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */,
+				D63F166220DB64CE00F8B479 /* CGVectorTests.swift in Sources */,
 				D62C6E041FB5658A00E7DF02 /* CGSizeTests.swift in Sources */,
 				D62C6E001FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E031FB5658A00E7DF02 /* CGRectTests.swift in Sources */,
@@ -532,6 +545,7 @@
 			files = (
 				D62C6DF51FB5657A00E7DF02 /* CGSize.swift in Sources */,
 				D63F165920DB574100F8B479 /* Operators.swift in Sources */,
+				D63F165E20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DF21FB5657A00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DF41FB5657A00E7DF02 /* CGRect.swift in Sources */,
 				D62C6DF11FB5657A00E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -544,6 +558,7 @@
 			files = (
 				D62C6E061FB5658A00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E071FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */,
+				D63F166320DB64CE00F8B479 /* CGVectorTests.swift in Sources */,
 				D62C6E091FB5658A00E7DF02 /* CGSizeTests.swift in Sources */,
 				D62C6E051FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E081FB5658A00E7DF02 /* CGRectTests.swift in Sources */,
@@ -556,6 +571,7 @@
 			files = (
 				D62C6DFA1FB5657A00E7DF02 /* CGSize.swift in Sources */,
 				D63F165A20DB574100F8B479 /* Operators.swift in Sources */,
+				D63F165F20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DF71FB5657A00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DF91FB5657A00E7DF02 /* CGRect.swift in Sources */,
 				D62C6DF61FB5657A00E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -568,6 +584,7 @@
 			files = (
 				D62C6E0B1FB5658C00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E0C1FB5658C00E7DF02 /* CGPointVectorTests.swift in Sources */,
+				D63F166420DB64CE00F8B479 /* CGVectorTests.swift in Sources */,
 				D62C6E0E1FB5658C00E7DF02 /* CGSizeTests.swift in Sources */,
 				D62C6E0A1FB5658C00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E0D1FB5658C00E7DF02 /* CGRectTests.swift in Sources */,
@@ -580,6 +597,7 @@
 			files = (
 				D62C6DFF1FB5657B00E7DF02 /* CGSize.swift in Sources */,
 				D63F165B20DB574100F8B479 /* Operators.swift in Sources */,
+				D63F166020DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DFC1FB5657B00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DFE1FB5657B00E7DF02 /* CGRect.swift in Sources */,
 				D62C6DFB1FB5657B00E7DF02 /* CGAffineTransform.swift in Sources */,
