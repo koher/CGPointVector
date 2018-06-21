@@ -1,7 +1,7 @@
 import CoreGraphics
 
 extension CGAffineTransform {
-    public func nearlyEqual(to transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
+    public func isNearlyEqual(to transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
         return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
     }
     

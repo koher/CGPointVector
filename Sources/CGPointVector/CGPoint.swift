@@ -1,7 +1,7 @@
 import CoreGraphics
 
 extension CGPoint {
-    public func nearlyEqual(to point: CGPoint, epsilon: CGFloat) -> Bool {
+    public func isNearlyEqual(to point: CGPoint, epsilon: CGFloat) -> Bool {
         let difference = self - point
         return fabs(difference.x) < epsilon && fabs(difference.y) < epsilon
     }
