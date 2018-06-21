@@ -30,17 +30,17 @@
 		D62C6DFD1FB5657B00E7DF02 /* CGPointVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D62C6DE81FB5657000E7DF02 /* CGPointVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D62C6DFE1FB5657B00E7DF02 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE91FB5657000E7DF02 /* CGRect.swift */; };
 		D62C6DFF1FB5657B00E7DF02 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DEA1FB5657000E7DF02 /* CGSize.swift */; };
-		D62C6E001FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */; };
+		D62C6E001FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */; };
 		D62C6E011FB5658A00E7DF02 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */; };
 		D62C6E021FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E031FB5658A00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
 		D62C6E041FB5658A00E7DF02 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */; };
-		D62C6E051FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */; };
+		D62C6E051FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */; };
 		D62C6E061FB5658A00E7DF02 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */; };
 		D62C6E071FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E081FB5658A00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
 		D62C6E091FB5658A00E7DF02 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */; };
-		D62C6E0A1FB5658C00E7DF02 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */; };
+		D62C6E0A1FB5658C00E7DF02 /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */; };
 		D62C6E0B1FB5658C00E7DF02 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */; };
 		D62C6E0C1FB5658C00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E0D1FB5658C00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
@@ -79,7 +79,7 @@
 		D62C6DB71FB564F700E7DF02 /* CGPointVector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGPointVector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62C6DBF1FB564F700E7DF02 /* CGPointVectorTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CGPointVectorTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62C6DD31FB5650C00E7DF02 /* CGPointVector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGPointVector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransormTests.swift; sourceTree = "<group>"; };
+		D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformTests.swift; sourceTree = "<group>"; };
 		D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointVectorTests.swift; sourceTree = "<group>"; };
 		D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		D62C6DDC1FB5657000E7DF02 /* CGPointVectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */,
+				D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */,
 				D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */,
 				D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */,
 				D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */,
@@ -514,7 +514,7 @@
 				D62C6E011FB5658A00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E021FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */,
 				D62C6E041FB5658A00E7DF02 /* CGSizeTests.swift in Sources */,
-				D62C6E001FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */,
+				D62C6E001FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E031FB5658A00E7DF02 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,7 +537,7 @@
 				D62C6E061FB5658A00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E071FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */,
 				D62C6E091FB5658A00E7DF02 /* CGSizeTests.swift in Sources */,
-				D62C6E051FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */,
+				D62C6E051FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E081FB5658A00E7DF02 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +560,7 @@
 				D62C6E0B1FB5658C00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E0C1FB5658C00E7DF02 /* CGPointVectorTests.swift in Sources */,
 				D62C6E0E1FB5658C00E7DF02 /* CGSizeTests.swift in Sources */,
-				D62C6E0A1FB5658C00E7DF02 /* CGAffineTransormTests.swift in Sources */,
+				D62C6E0A1FB5658C00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E0D1FB5658C00E7DF02 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
