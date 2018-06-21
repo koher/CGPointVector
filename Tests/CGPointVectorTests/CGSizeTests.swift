@@ -44,7 +44,7 @@ class CGSizeTests: XCTestCase {
         XCTAssertEqual(CGSize(width: 1.0, height: 0.0).angle(from: CGSize(width: sqrt(3.0), height: 1.0)), CGFloat.pi / 6, accuracy: torelance)
     }
     
-    func testCosOfAngle() {
+    func testCos() {
         XCTAssertEqual(CGSize(width: 1.0, height: 0.0).cos(from: CGSize(width: 1.0, height: sqrt(3.0))), 0.5, accuracy: torelance)
     }
     
@@ -134,7 +134,7 @@ class CGSizeTests: XCTestCase {
             ("testDistance", testDistance),
             ("testSquareDistance", testSquareDistance),
             ("testAngle", testAngle),
-            ("testCosOfAngle", testCosOfAngle),
+            ("testCos", testCos),
             ("testDot", testDot),
             ("testDescription", testDescription),
             ("testPrefixPlus", testPrefixPlus),
