@@ -69,23 +69,14 @@ class CGAffineTransormTests: XCTestCase {
         XCTAssertEqual(CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6).description, "(1.0, 2.0, 3.0, 4.0, 5.0, 6.0)")
     }
     
-    func testMultiply() {
+    func testMatmul() {
         XCTAssertTrue((CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6) ⊗ CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1))
             .nearlyEqual(to: CGAffineTransform(a: 14, b: 11, c: 34, d: 27, tx: 56, ty: 44), epsilon: torelance))
-    }
-    
-    func testMultiplyByPoint() {
-        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 4))
-            .nearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
         XCTAssertTrue((CGAffineTransform(translationX: 1.0, y: -2.0) ⊗ CGPoint(x: 1.0, y: 1.0))
             .nearlyEqual(to: CGPoint(x: 2.0, y: -1.0), epsilon: torelance))
     }
     
-    func testEquals() {
-        
-    }
-    
-    func testMultiplicationAssignment() {
+    func testMatmulAssignment() {
         var a = CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6)
         a ⊗= CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1)
         print(a)
@@ -99,10 +90,8 @@ class CGAffineTransormTests: XCTestCase {
             ("testNearlyEqual", testNearlyEqual),
             ("testInverse", testInverse),
             ("testDescription", testDescription),
-            ("testMultiply", testMultiply),
-            ("testMultiplyByPoint", testMultiplyByPoint),
-            ("testEquals", testEquals),
-            ("testMultiplicationAssignment", testMultiplicationAssignment),
+            ("testMatmul", testMatmul),
+            ("testMatmulAssignment", testMatmulAssignment),
         ]
     }
 }

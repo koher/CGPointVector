@@ -66,20 +66,30 @@ class CGPointTests: XCTestCase {
     
     func testAdd() {
         XCTAssertTrue((CGPoint(x: 1.0, y: 2.0) + CGPoint(x: 3.0, y: -4.0)).nearlyEqual(to: CGPoint(x: 4.0, y: -2.0), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 1.0, y: 2.0) + CGSize(width: 3.0, height: -4.0)).nearlyEqual(to: CGPoint(x: 4.0, y: -2.0), epsilon: torelance))
     }
     
     func testSubtract() {
         XCTAssertTrue((CGPoint(x: 3.0, y: 2.0) - CGPoint(x: 1.0, y: 4.0)).nearlyEqual(to: CGPoint(x: 2.0, y: -2.0), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 3.0, y: 2.0) - CGSize(width: 1.0, height: 4.0)).nearlyEqual(to: CGPoint(x: 2.0, y: -2.0), epsilon: torelance))
     }
     
     func testMultiply() {
         XCTAssertTrue((CGPoint(x: 2.0, y: 3.0) * CGPoint(x: 5.0, y: 7.0)).nearlyEqual(to: CGPoint(x: 10.0, y: 21.0), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 2.0, y: 3.0) * CGSize(width: 5.0, height: 7.0)).nearlyEqual(to: CGPoint(x: 10.0, y: 21.0), epsilon: torelance))
         XCTAssertTrue((CGPoint(x: 1.0, y: -2.0) * 3.0).nearlyEqual(to: CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
         XCTAssertTrue((3.0 * CGPoint(x: 1.0, y: -2.0)).nearlyEqual(to: CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
     }
     
     func testDivide() {
+        XCTAssertTrue((CGPoint(x: 8.0, y: 27.0) / CGPoint(x: 2.0, y: 3.0)).nearlyEqual(to: CGPoint(x: 4.0, y: 9.0), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 8.0, y: 27.0) / CGSize(width: 2.0, height: 3.0)).nearlyEqual(to: CGPoint(x: 4.0, y: 9.0), epsilon: torelance))
         XCTAssertTrue((CGPoint(x: 8.0, y: -2.0) / 4.0).nearlyEqual(to: CGPoint(x: 2.0, y: -0.5), epsilon: torelance))
+    }
+    
+    func testMatmul() {
+        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 4))
+            .nearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
     }
     
     func testAdditionAssignment() {
@@ -108,6 +118,12 @@ class CGPointTests: XCTestCase {
         XCTAssertTrue(a.nearlyEqual(to: CGPoint(x: 8.0, y: -2.0) / 4.0, epsilon: torelance))
     }
     
+    func testMatmulAssignment() {
+        var a = CGPoint(x: 1.0, y: 1.0)
+        a ⊗= CGAffineTransform(rotationAngle: CGFloat.pi / 4)
+        XCTAssertTrue(a.nearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
+    }
+    
     static var allTests : [(String, (CGPointTests) -> () throws -> Void)] {
         return [
             ("testNearlyEqual", testNearlyEqual),
@@ -127,10 +143,12 @@ class CGPointTests: XCTestCase {
             ("testSubtract", testSubtract),
             ("testMultiply", testMultiply),
             ("testDivide", testDivide),
+            ("testMatmul", testMatmul),
             ("testAdditionAssignment", testAdditionAssignment),
             ("testSuntractionAssignment", testSuntractionAssignment),
             ("testMultiplicationAssignment", testMultiplicationAssignment),
             ("testDivisionAssignment", testDivisionAssignment),
+            ("testMatmulAssignment", testMatmulAssignment),
         ]
     }
 }

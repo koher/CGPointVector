@@ -19,6 +19,12 @@ extension CGRect: CustomStringConvertible {
     }
 }
 
-public func * (left: CGRect, right: CGAffineTransform) -> CGRect {
-    return left.applying(right)
+extension CGRect {
+    public static func ⊗ (lhs: CGRect, rhs: CGAffineTransform) -> CGRect {
+        return lhs.applying(rhs)
+    }
+    
+    public static func ⊗= (lhs: inout CGRect, rhs: CGAffineTransform) {
+        lhs = lhs ⊗ rhs
+    }
 }

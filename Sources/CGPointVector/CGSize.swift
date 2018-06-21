@@ -5,6 +5,42 @@ extension CGSize {
         let difference = self - point
         return fabs(difference.width) < epsilon && fabs(difference.height) < epsilon
     }
+    
+    public var length: CGFloat {
+        return sqrt(squareLength)
+    }
+    
+    public var squareLength: CGFloat {
+        return width * width + height * height
+    }
+    
+    public var unit: CGSize {
+        return self * (1.0 / length)
+    }
+    
+    public var phase: CGFloat {
+        return atan2(height, width)
+    }
+    
+    public func distance(from point: CGSize) -> CGFloat {
+        return (self - point).length
+    }
+    
+    public func squareDistance(from point: CGSize) -> CGFloat {
+        return (self - point).squareLength
+    }
+    
+    public func angle(from point: CGSize) -> CGFloat {
+        return acos(cos(from: point))
+    }
+    
+    public func cos(from point: CGSize) -> CGFloat {
+        return fmin(fmax(self.dot(point) / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
+    }
+    
+    public func dot(_ other: CGSize) -> CGFloat {
+        return self.width * other.width + self.height * other.height
+    }
 }
 
 extension CGSize: CustomStringConvertible {
@@ -13,66 +49,90 @@ extension CGSize: CustomStringConvertible {
     }
 }
 
-public prefix func + (value: CGSize) -> CGSize {
-    return value
+extension CGSize {
+    public static prefix func + (value: CGSize) -> CGSize {
+        return value
+    }
+    
+    public static prefix func - (value: CGSize) -> CGSize {
+        return CGSize(width: -value.width, height: -value.height)
+    }
+    
+    public static func + (lhs: CGSize, rhs: CGSize) -> CGSize {
+        return CGSize(width: lhs.width + rhs.width, height: lhs.height + rhs.height)
+    }
+    
+    public static func - (lhs: CGSize, rhs: CGSize) -> CGSize {
+        return CGSize(width: lhs.width - rhs.width, height: lhs.height - rhs.height)
+    }
+    
+    public static func * (lhs: CGSize, rhs: CGSize) -> CGSize {
+        return CGSize(width: lhs.width * rhs.width, height: lhs.height * rhs.height)
+    }
+    
+    public static func * (lhs: CGSize, rhs: CGFloat) -> CGSize {
+        return CGSize(width: lhs.width * rhs, height: lhs.height * rhs)
+    }
+    
+    public static func * (lhs: CGFloat, rhs: CGSize) -> CGSize {
+        return CGSize(width: rhs.width * lhs, height: rhs.height * lhs)
+    }
+    
+    public static func / (lhs: CGSize, rhs: CGSize) -> CGSize {
+        return CGSize(width: lhs.width / rhs.width, height: lhs.height / rhs.height)
+    }
+    
+    public static func / (lhs: CGSize, rhs: CGFloat) -> CGSize {
+        return CGSize(width: lhs.width / rhs, height: lhs.height / rhs)
+    }
+    
+    public static func ⊗ (lhs: CGSize, rhs: CGAffineTransform) -> CGSize {
+        return lhs.applying(rhs)
+    }
+    
+    public static func += (lhs: inout CGSize, rhs: CGSize) {
+        lhs = lhs + rhs
+    }
+    
+    public static func -= (lhs: inout CGSize, rhs: CGSize) {
+        lhs = lhs - rhs
+    }
+    
+    public static func *= (lhs: inout CGSize, rhs: CGSize) {
+        lhs = lhs * rhs
+    }
+    
+    public static func *= (lhs: inout CGSize, rhs: CGFloat) {
+        lhs = lhs * rhs
+    }
+    
+    public static func /= (lhs: inout CGSize, rhs: CGSize) {
+        lhs = lhs / rhs
+    }
+    
+    public static func /= (lhs: inout CGSize, rhs: CGFloat) {
+        lhs = lhs / rhs
+    }
+    
+    public static func ⊗= (lhs: inout CGSize, rhs: CGAffineTransform) {
+        lhs = lhs ⊗ rhs
+    }
 }
 
-public prefix func - (value: CGSize) -> CGSize {
-    return CGSize(width: -value.width, height: -value.height)
-}
-
-public func + (left: CGSize, right: CGSize) -> CGSize {
-    return CGSize(width: left.width + right.width, height: left.height + right.height)
-}
-
-public func - (left: CGSize, right: CGSize) -> CGSize {
-    return CGSize(width: left.width - right.width, height: left.height - right.height)
-}
-
-public func * (left: CGSize, right: CGAffineTransform) -> CGSize {
-    return left.applying(right)
-}
-
-public func * (left: CGSize, right: CGFloat) -> CGSize {
-    return CGSize(width: left.width * right, height: left.height * right)
-}
-
-public func * (left: CGFloat, right: CGSize) -> CGSize {
-    return CGSize(width: right.width * left, height: right.height * left)
-}
-
-public func / (left: CGSize, right: CGFloat) -> CGSize {
-    return CGSize(width: left.width / right, height: left.height / right)
-}
-
-public func += (left: inout CGSize, right: CGSize) {
-    left = left + right
-}
-
-public func -= (left: inout CGSize, right: CGSize) {
-    left = left - right
-}
-
-public func *= (left: inout CGSize, right: CGFloat) {
-    left = left * right
-}
-
-public func /= (left: inout CGSize, right: CGFloat) {
-    left = left / right
-}
-
-public func + (left: CGPoint, right: CGSize) -> CGPoint {
-    return CGPoint(x: left.x + right.width, y: left.y + right.height)
-}
-
-public func + (left: CGSize, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.width + right.x, y: left.height + right.y)
-}
-
-public func - (left: CGPoint, right: CGSize) -> CGPoint {
-    return CGPoint(x: left.x - right.width, y: left.y - right.height)
-}
-
-public func - (left: CGSize, right: CGPoint) -> CGPoint {
-    return CGPoint(x: left.width - right.x, y: left.height - right.y)
+extension CGSize {
+    public static func + (lhs: CGSize, rhs: CGPoint) -> CGPoint {
+        return CGPoint(x: lhs.width + rhs.x, y: lhs.height + rhs.y)
+    }
+    
+    public static func - (lhs: CGSize, rhs: CGPoint) -> CGPoint {
+        return CGPoint(x: lhs.width - rhs.x, y: lhs.height - rhs.y)
+    }
+    
+    public static func * (lhs: CGSize, rhs: CGPoint) -> CGPoint {
+        return CGPoint(x: lhs.width * rhs.x, y: lhs.height * rhs.y)
+    }
+    
+    public static func / (lhs: CGSize, rhs: CGPoint) -> CGPoint {
+        return CGPoint(x: lhs.width / rhs.x, y: lhs.height / rhs.y)
+    }
 }

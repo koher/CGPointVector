@@ -1,8 +1,5 @@
 import CoreGraphics
 
-infix operator ⊗ : MultiplicationPrecedence
-infix operator ⊗= : AssignmentPrecedence
-
 extension CGAffineTransform {
     public func nearlyEqual(to transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
         return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
@@ -19,18 +16,16 @@ extension CGAffineTransform: CustomStringConvertible {
     }
 }
 
-public func ⊗ (left: CGAffineTransform, right: CGAffineTransform) -> CGAffineTransform {
-    return left.concatenating(right)
-}
-
-public func ⊗ (left: CGAffineTransform, right: CGPoint) -> CGPoint {
-    return right.applying(left)
-}
-
-public func ⊗ (left: CGPoint, right: CGAffineTransform) -> CGPoint {
-    return left.applying(right)
-}
-
-public func ⊗= (left: inout CGAffineTransform, right: CGAffineTransform) {
-    left = left ⊗ right
+extension CGAffineTransform {
+    public static func ⊗ (lhs: CGAffineTransform, rhs: CGAffineTransform) -> CGAffineTransform {
+        return lhs.concatenating(rhs)
+    }
+    
+    public static func ⊗= (lhs: inout CGAffineTransform, rhs: CGAffineTransform) {
+        lhs = lhs ⊗ rhs
+    }
+    
+    public static func ⊗ (lhs: CGAffineTransform, rhs: CGPoint) -> CGPoint {
+        return rhs.applying(lhs)
+    }
 }
