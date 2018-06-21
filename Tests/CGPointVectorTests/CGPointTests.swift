@@ -48,6 +48,10 @@ class CGPointTests: XCTestCase {
         XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).cos(from: CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
     }
     
+    func testDot() {
+        XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).dot(CGPoint(x: -3.0, y: 4.0)), 5.0, accuracy: torelance)
+    }
+    
     func testDescription() {
         XCTAssertEqual(CGPoint(x: 1.0, y: 2.0).description, "(1.0, 2.0)")
     }
@@ -69,10 +73,6 @@ class CGPointTests: XCTestCase {
     }
     
     func testMultiply() {
-        XCTAssertEqual(CGPoint(x: 1.0, y: 2.0) * CGPoint(x: -3.0, y: 4.0), 5.0, accuracy: torelance)
-    }
-    
-    func testMultiplyByFloat() {
         XCTAssertTrue((CGPoint(x: 1.0, y: -2.0) * 3.0).nearlyEqual(to: CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
         XCTAssertTrue((3.0 * CGPoint(x: 1.0, y: -2.0)).nearlyEqual(to: CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
     }
@@ -118,13 +118,13 @@ class CGPointTests: XCTestCase {
             ("testSquareDistance", testSquareDistance),
             ("testAngle", testAngle),
             ("testCosOfAngle", testCosOfAngle),
+            ("testDot", testDot),
             ("testDescription", testDescription),
             ("testPrefixPlus", testPrefixPlus),
             ("testNegate", testNegate),
             ("testAdd", testAdd),
             ("testSubtract", testSubtract),
             ("testMultiply", testMultiply),
-            ("testMultiplyByFloat", testMultiplyByFloat),
             ("testDivide", testDivide),
             ("testAdditionAssignment", testAdditionAssignment),
             ("testSuntractionAssignment", testSuntractionAssignment),

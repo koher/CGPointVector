@@ -26,7 +26,7 @@ class CGPointVectorTests: XCTestCase {
         let length = a.length // 5.0
         let distance = a.distance(from: b) // 1.4142135623731
         let unitVector = a.unit // (0.6, -0.8)
-        let dotProduct = a * b // 26.0
+        let dotProduct = a.dot(b) // 26.0
 
         /**/ XCTAssertTrue(sum.nearlyEqual(to: CGPoint(x: 5.0, y: -9.0), epsilon: torelance))
         /**/ XCTAssertEqual(length, 5.0, accuracy: torelance)

@@ -35,7 +35,11 @@ extension CGPoint {
     }
     
     public func cos(from point: CGPoint) -> CGFloat {
-        return fmin(fmax(self * point / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
+        return fmin(fmax(self.dot(point) / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
+    }
+    
+    public func dot(_ other: CGPoint) -> CGFloat {
+        return self.x * other.x + self.y * other.y
     }
 }
 
@@ -59,10 +63,6 @@ public func + (left: CGPoint, right: CGPoint) -> CGPoint {
 
 public func - (left: CGPoint, right: CGPoint) -> CGPoint {
     return CGPoint(x: left.x - right.x, y: left.y - right.y)
-}
-
-public func * (left: CGPoint, right: CGPoint) -> CGFloat {
-    return left.x * right.x + left.y * right.y
 }
 
 public func * (left: CGPoint, right: CGFloat) -> CGPoint {

@@ -25,7 +25,7 @@ let sum = a + b // (5.0, -9.0)
 let length = a.length // 5.0
 let distance = a.distance(from: b) // 1.4142135623731
 let unitVector = a.unit // (0.6, -0.8)
-let dotProduct = a * b // 26.0
+let dotProduct = a.dot(b) // 26.0
 ```
 
 ## Installation
