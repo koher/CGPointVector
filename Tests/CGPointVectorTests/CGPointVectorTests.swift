@@ -10,7 +10,7 @@ class CGPointVectorTests: XCTestCase {
         let sum = a + b // (-2.0, 7.0)
         let distance = (b - a).length // 5.0
         let direction = (b - a).unit // (-0.8, 0.6)
-        let rotated = a * CGAffineTransform(rotationAngle: CGFloat.pi / 2) // (-2.0, 1.0)
+        let rotated = a ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 2) // (-2.0, 1.0)
 
         /**/ XCTAssertTrue(sum.nearlyEqual(to: CGPoint(x: -2.0, y: 7.0), epsilon: torelance))
         /**/ XCTAssertEqual(distance, 5.0, accuracy: torelance)

@@ -70,14 +70,14 @@ class CGAffineTransormTests: XCTestCase {
     }
     
     func testMultiply() {
-        XCTAssertTrue((CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6) * CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1))
+        XCTAssertTrue((CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6) ⊗ CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1))
             .nearlyEqual(to: CGAffineTransform(a: 14, b: 11, c: 34, d: 27, tx: 56, ty: 44), epsilon: torelance))
     }
     
     func testMultiplyByPoint() {
-        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4))
+        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 4))
             .nearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
-        XCTAssertTrue((CGAffineTransform(translationX: 1.0, y: -2.0) * CGPoint(x: 1.0, y: 1.0))
+        XCTAssertTrue((CGAffineTransform(translationX: 1.0, y: -2.0) ⊗ CGPoint(x: 1.0, y: 1.0))
             .nearlyEqual(to: CGPoint(x: 2.0, y: -1.0), epsilon: torelance))
     }
     
@@ -87,11 +87,11 @@ class CGAffineTransormTests: XCTestCase {
     
     func testMultiplicationAssignment() {
         var a = CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6)
-        a *= CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1)
+        a ⊗= CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1)
         print(a)
         
         XCTAssertTrue(a.nearlyEqual(to: CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6)
-            * CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1), epsilon: torelance))
+            ⊗ CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1), epsilon: torelance))
     }
     
     static var allTests : [(String, (CGAffineTransormTests) -> () throws -> Void)] {

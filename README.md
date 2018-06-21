@@ -10,7 +10,7 @@ let a = CGPoint(x: 1, y: 2), b = CGPoint(x: -3, y: 5)
 let sum = a + b // (-2.0, 7.0)
 let distance = (b - a).length // 5.0
 let direction = (b - a).unit // (-0.8, 0.6)
-let rotated = a * CGAffineTransform(rotationAngle: CGFloat.pi / 2) // (-2.0, 1.0)
+let rotated = a ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 2) // (-2.0, 1.0)
 ```
 
 ## Usage
