@@ -73,6 +73,7 @@ class CGPointTests: XCTestCase {
     }
     
     func testMultiply() {
+        XCTAssertTrue((CGPoint(x: 2.0, y: 3.0) * CGPoint(x: 5.0, y: 7.0)).nearlyEqual(to: CGPoint(x: 10.0, y: 21.0), epsilon: torelance))
         XCTAssertTrue((CGPoint(x: 1.0, y: -2.0) * 3.0).nearlyEqual(to: CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
         XCTAssertTrue((3.0 * CGPoint(x: 1.0, y: -2.0)).nearlyEqual(to: CGPoint(x: 3.0, y: -6.0), epsilon: torelance))
     }
