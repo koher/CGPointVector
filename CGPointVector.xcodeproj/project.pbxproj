@@ -96,7 +96,6 @@
 		D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
 		D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 		D62C6DE21FB5657000E7DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D62C6DE31FB5657000E7DF02 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		D62C6DE61FB5657000E7DF02 /* CGAffineTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransform.swift; sourceTree = "<group>"; };
 		D62C6DE71FB5657000E7DF02 /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		D62C6DE81FB5657000E7DF02 /* CGPointVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGPointVector.h; sourceTree = "<group>"; };
@@ -191,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				D62C6DDC1FB5657000E7DF02 /* CGPointVectorTests */,
-				D62C6DE31FB5657000E7DF02 /* LinuxMain.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
