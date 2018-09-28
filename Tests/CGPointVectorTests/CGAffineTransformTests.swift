@@ -65,19 +65,19 @@ class CGAffineTransormTests: XCTestCase {
     }
     
     func testMatmul() {
-        XCTAssertTrue((CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6) ⊗ CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1))
+        XCTAssertTrue((CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6) * CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1))
             .isNearlyEqual(to: CGAffineTransform(a: 14, b: 11, c: 34, d: 27, tx: 56, ty: 44), epsilon: torelance))
-        XCTAssertTrue((CGAffineTransform(translationX: 1.0, y: -2.0) ⊗ CGPoint(x: 1.0, y: 1.0))
+        XCTAssertTrue((CGAffineTransform(translationX: 1.0, y: -2.0) * CGPoint(x: 1.0, y: 1.0))
             .isNearlyEqual(to: CGPoint(x: 2.0, y: -1.0), epsilon: torelance))
     }
     
     func testMatmulAssignment() {
         var a = CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6)
-        a ⊗= CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1)
+        a *= CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1)
         print(a)
         
         XCTAssertTrue(a.isNearlyEqual(to: CGAffineTransform(a: 1, b: 2, c: 3, d: 4, tx: 5, ty: 6)
-            ⊗ CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1), epsilon: torelance))
+            * CGAffineTransform(a: 6, b: 5, c: 4, d: 3, tx: 2, ty: 1), epsilon: torelance))
     }
     
     static var allTests : [(String, (CGAffineTransormTests) -> () throws -> Void)] {

@@ -20,11 +20,11 @@ extension CGRect: CustomStringConvertible {
 }
 
 extension CGRect {
-    public static func ⊗ (lhs: CGRect, rhs: CGAffineTransform) -> CGRect {
+    public static func * (lhs: CGRect, rhs: CGAffineTransform) -> CGRect {
         return lhs.applying(rhs)
     }
     
-    public static func ⊗= (lhs: inout CGRect, rhs: CGAffineTransform) {
-        lhs = lhs ⊗ rhs
+    public static func *= (lhs: inout CGRect, rhs: CGAffineTransform) {
+        lhs = lhs * rhs
     }
 }

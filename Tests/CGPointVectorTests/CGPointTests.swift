@@ -88,7 +88,7 @@ class CGPointTests: XCTestCase {
     }
     
     func testMatmul() {
-        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 4))
+        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4))
             .isNearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
     }
     
@@ -120,7 +120,7 @@ class CGPointTests: XCTestCase {
     
     func testMatmulAssignment() {
         var a = CGPoint(x: 1.0, y: 1.0)
-        a ⊗= CGAffineTransform(rotationAngle: CGFloat.pi / 4)
+        a *= CGAffineTransform(rotationAngle: CGFloat.pi / 4)
         XCTAssertTrue(a.isNearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
     }
     

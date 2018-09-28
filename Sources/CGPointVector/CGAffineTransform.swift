@@ -13,15 +13,15 @@ extension CGAffineTransform: CustomStringConvertible {
 }
 
 extension CGAffineTransform {
-    public static func ⊗ (lhs: CGAffineTransform, rhs: CGAffineTransform) -> CGAffineTransform {
+    public static func * (lhs: CGAffineTransform, rhs: CGAffineTransform) -> CGAffineTransform {
         return lhs.concatenating(rhs)
     }
     
-    public static func ⊗= (lhs: inout CGAffineTransform, rhs: CGAffineTransform) {
-        lhs = lhs ⊗ rhs
+    public static func *= (lhs: inout CGAffineTransform, rhs: CGAffineTransform) {
+        lhs = lhs * rhs
     }
     
-    public static func ⊗ (lhs: CGAffineTransform, rhs: CGPoint) -> CGPoint {
+    public static func * (lhs: CGAffineTransform, rhs: CGPoint) -> CGPoint {
         return rhs.applying(lhs)
     }
 }

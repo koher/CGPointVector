@@ -45,10 +45,6 @@
 		D62C6E0C1FB5658C00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E0D1FB5658C00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
 		D62C6E0E1FB5658C00E7DF02 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */; };
-		D63F165820DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
-		D63F165920DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
-		D63F165A20DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
-		D63F165B20DB574100F8B479 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165720DB574100F8B479 /* Operators.swift */; };
 		D63F165D20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
 		D63F165E20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
 		D63F165F20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
@@ -102,7 +98,6 @@
 		D62C6DE91FB5657000E7DF02 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		D62C6DEA1FB5657000E7DF02 /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		D62C6DEB1FB5657000E7DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D63F165720DB574100F8B479 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		D63F165C20DB641300F8B479 /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
 		D63F166120DB64CE00F8B479 /* CGVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVectorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,7 +221,6 @@
 				D62C6DEA1FB5657000E7DF02 /* CGSize.swift */,
 				D63F165C20DB641300F8B479 /* CGVector.swift */,
 				D62C6DEB1FB5657000E7DF02 /* Info.plist */,
-				D63F165720DB574100F8B479 /* Operators.swift */,
 			);
 			path = CGPointVector;
 			sourceTree = "<group>";
@@ -523,7 +517,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DF01FB5657900E7DF02 /* CGSize.swift in Sources */,
-				D63F165820DB574100F8B479 /* Operators.swift in Sources */,
 				D63F165D20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DED1FB5657900E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DEF1FB5657900E7DF02 /* CGRect.swift in Sources */,
@@ -549,7 +542,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DF51FB5657A00E7DF02 /* CGSize.swift in Sources */,
-				D63F165920DB574100F8B479 /* Operators.swift in Sources */,
 				D63F165E20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DF21FB5657A00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DF41FB5657A00E7DF02 /* CGRect.swift in Sources */,
@@ -575,7 +567,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DFA1FB5657A00E7DF02 /* CGSize.swift in Sources */,
-				D63F165A20DB574100F8B479 /* Operators.swift in Sources */,
 				D63F165F20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DF71FB5657A00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DF91FB5657A00E7DF02 /* CGRect.swift in Sources */,
@@ -601,7 +592,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DFF1FB5657B00E7DF02 /* CGSize.swift in Sources */,
-				D63F165B20DB574100F8B479 /* Operators.swift in Sources */,
 				D63F166020DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DFC1FB5657B00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DFE1FB5657B00E7DF02 /* CGRect.swift in Sources */,

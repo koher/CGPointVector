@@ -36,8 +36,8 @@ class CGRectTests: XCTestCase {
     }
     
     func testMatmul() {
-        print(CGRect(x: 1.0, y: 2.0, width: 3.0, height: 4.0) ⊗ CGAffineTransform(a: 0, b: 1, c: -1, d: 0, tx: 0, ty: 0))
-        XCTAssertTrue((CGRect(x: 1.0, y: 2.0, width: 3.0, height: 4.0) ⊗ CGAffineTransform(a: 0, b: 1, c: -1, d: 0, tx: 0, ty: 0))
+        print(CGRect(x: 1.0, y: 2.0, width: 3.0, height: 4.0) * CGAffineTransform(a: 0, b: 1, c: -1, d: 0, tx: 0, ty: 0))
+        XCTAssertTrue((CGRect(x: 1.0, y: 2.0, width: 3.0, height: 4.0) * CGAffineTransform(a: 0, b: 1, c: -1, d: 0, tx: 0, ty: 0))
             .isNearlyEqual(to: CGRect(x: -6.0, y: 1.0, width: 4.0, height: 3.0), epsilon: torelance))
     }
     

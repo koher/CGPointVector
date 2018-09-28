@@ -88,7 +88,7 @@ class CGSizeTests: XCTestCase {
     }
     
     func testMatmul() {
-        XCTAssertTrue((CGSize(width: 1.0, height: 1.0) ⊗ CGAffineTransform(rotationAngle: CGFloat.pi / 4))
+        XCTAssertTrue((CGSize(width: 1.0, height: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4))
             .isNearlyEqual(to: CGSize(width: 0.0, height: sqrt(2)), epsilon: torelance))
     }
     
@@ -120,7 +120,7 @@ class CGSizeTests: XCTestCase {
     
     func testMatmulAssignment() {
         var a = CGSize(width: 1.0, height: 1.0)
-        a ⊗= CGAffineTransform(rotationAngle: CGFloat.pi / 4)
+        a *= CGAffineTransform(rotationAngle: CGFloat.pi / 4)
         XCTAssertTrue(a.isNearlyEqual(to: CGSize(width: 0.0, height: sqrt(2)), epsilon: torelance))
     }
     

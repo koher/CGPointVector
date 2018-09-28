@@ -86,7 +86,7 @@ extension CGPoint {
         return CGPoint(x: lhs.x / rhs, y: lhs.y / rhs)
     }
     
-    public static func ⊗ (lhs: CGPoint, rhs: CGAffineTransform) -> CGPoint {
+    public static func * (lhs: CGPoint, rhs: CGAffineTransform) -> CGPoint {
         return lhs.applying(rhs)
     }
     
@@ -114,8 +114,8 @@ extension CGPoint {
         lhs = lhs / rhs
     }
     
-    public static func ⊗= (lhs: inout CGPoint, rhs: CGAffineTransform) {
-        lhs = lhs ⊗ rhs
+    public static func *= (lhs: inout CGPoint, rhs: CGAffineTransform) {
+        lhs = lhs * rhs
     }
 }
 

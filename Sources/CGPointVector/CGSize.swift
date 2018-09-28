@@ -86,7 +86,7 @@ extension CGSize {
         return CGSize(width: lhs.width / rhs, height: lhs.height / rhs)
     }
     
-    public static func ⊗ (lhs: CGSize, rhs: CGAffineTransform) -> CGSize {
+    public static func * (lhs: CGSize, rhs: CGAffineTransform) -> CGSize {
         return lhs.applying(rhs)
     }
     
@@ -114,8 +114,8 @@ extension CGSize {
         lhs = lhs / rhs
     }
     
-    public static func ⊗= (lhs: inout CGSize, rhs: CGAffineTransform) {
-        lhs = lhs ⊗ rhs
+    public static func *= (lhs: inout CGSize, rhs: CGAffineTransform) {
+        lhs = lhs * rhs
     }
 }
 

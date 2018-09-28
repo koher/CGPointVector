@@ -86,7 +86,7 @@ extension CGVector {
         return CGVector(dx: lhs.dx / rhs, dy: lhs.dy / rhs)
     }
     
-    public static func ⊗ (lhs: CGVector, rhs: CGAffineTransform) -> CGVector {
+    public static func * (lhs: CGVector, rhs: CGAffineTransform) -> CGVector {
         let point = CGPoint(x: lhs.dx, y: lhs.dy).applying(rhs)
         return CGVector(dx: point.x, dy: point.y)
     }
@@ -115,8 +115,8 @@ extension CGVector {
         lhs = lhs / rhs
     }
     
-    public static func ⊗= (lhs: inout CGVector, rhs: CGAffineTransform) {
-        lhs = lhs ⊗ rhs
+    public static func *= (lhs: inout CGVector, rhs: CGAffineTransform) {
+        lhs = lhs * rhs
     }
 }
 
