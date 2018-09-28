@@ -4,8 +4,8 @@ extension CGRect {
     public func isNearlyEqual(to rect: CGRect, epsilon: CGFloat) -> Bool {
         let difference1 = self.origin - rect.origin
         let difference2 = (self.origin + self.size) - (rect.origin + rect.size)
-        return fabs(difference1.x) < epsilon && fabs(difference1.y) < epsilon
-            && fabs(difference2.x) < epsilon && fabs(difference2.y) < epsilon
+        return abs(difference1.x) < epsilon && abs(difference1.y) < epsilon
+            && abs(difference2.x) < epsilon && abs(difference2.y) < epsilon
     }
     
     public var center: CGPoint {

@@ -3,7 +3,7 @@ import CoreGraphics
 extension CGSize {
     public func isNearlyEqual(to point: CGSize, epsilon: CGFloat) -> Bool {
         let difference = self - point
-        return fabs(difference.width) < epsilon && fabs(difference.height) < epsilon
+        return abs(difference.width) < epsilon && abs(difference.height) < epsilon
     }
     
     public var length: CGFloat {

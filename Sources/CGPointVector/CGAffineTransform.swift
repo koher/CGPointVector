@@ -2,7 +2,7 @@ import CoreGraphics
 
 extension CGAffineTransform {
     public func isNearlyEqual(to transform: CGAffineTransform, epsilon: CGFloat) -> Bool {
-        return fabs(a - transform.a) < epsilon && fabs(b - transform.b) < epsilon && fabs(c - transform.c) < epsilon && fabs(d - transform.d) < epsilon && fabs(tx - transform.tx) < epsilon && fabs(ty - transform.ty) < epsilon
+        return abs(a - transform.a) < epsilon && abs(b - transform.b) < epsilon && abs(c - transform.c) < epsilon && abs(d - transform.d) < epsilon && abs(tx - transform.tx) < epsilon && abs(ty - transform.ty) < epsilon
     }
 }
 

@@ -3,7 +3,7 @@ import CoreGraphics
 extension CGVector {
     public func isNearlyEqual(to point: CGVector, epsilon: CGFloat) -> Bool {
         let difference = self - point
-        return fabs(difference.dx) < epsilon && fabs(difference.dy) < epsilon
+        return abs(difference.dx) < epsilon && abs(difference.dy) < epsilon
     }
     
     public var length: CGFloat {
