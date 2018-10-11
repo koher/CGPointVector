@@ -42,10 +42,16 @@ class CGVectorTests: XCTestCase {
     
     func testAngle() {
         XCTAssertEqual(CGVector(dx: 1.0, dy: 0.0).angle(from: CGVector(dx: sqrt(3.0), dy: 1.0)), CGFloat.pi / 6, accuracy: torelance)
+        XCTAssertEqual(CGVector(dx: 1.0, dy: 0.0).angle(from: .zero), 0.0, accuracy: torelance)
+        XCTAssertEqual(CGVector.zero.angle(from: CGVector(dx: 0.0, dy: 1.0)), 0.0, accuracy: torelance)
+        XCTAssertEqual(CGVector.zero.angle(from: .zero), 0.0, accuracy: torelance)
     }
     
     func testCos() {
         XCTAssertEqual(CGVector(dx: 1.0, dy: 0.0).cos(from: CGVector(dx: 1.0, dy: sqrt(3.0))), 0.5, accuracy: torelance)
+        XCTAssertEqual(CGVector(dx: 1.0, dy: 0.0).cos(from: .zero), 1.0, accuracy: torelance)
+        XCTAssertEqual(CGVector.zero.cos(from: CGVector(dx: 0.0, dy: 1.0)), 1.0, accuracy: torelance)
+        XCTAssertEqual(CGVector.zero.cos(from: .zero), 1.0, accuracy: torelance)
     }
     
     func testDot() {

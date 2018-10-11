@@ -42,10 +42,16 @@ class CGPointTests: XCTestCase {
     
     func testAngle() {
         XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).angle(from: CGPoint(x: sqrt(3.0), y: 1.0)), CGFloat.pi / 6, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).angle(from: .zero), 0.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint.zero.angle(from: CGPoint(x: 0.0, y: 1.0)), 0.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint.zero.angle(from: .zero), 0.0, accuracy: torelance)
     }
     
     func testCos() {
         XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).cos(from: CGPoint(x: 1.0, y: sqrt(3.0))), 0.5, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: 1.0, y: 0.0).cos(from: .zero), 1.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint.zero.cos(from: CGPoint(x: 0.0, y: 1.0)), 1.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint.zero.cos(from: .zero), 1.0, accuracy: torelance)
     }
     
     func testDot() {

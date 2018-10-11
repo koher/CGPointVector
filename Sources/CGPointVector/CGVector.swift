@@ -35,7 +35,11 @@ extension CGVector {
     }
     
     public func cos(from point: CGVector) -> CGFloat {
-        return fmin(fmax(self.dot(point) / sqrt(self.squareLength * point.squareLength), -1.0), 1.0)
+        let squareLength1 = self.squareLength
+        guard squareLength1 > 0.0 else { return 1.0 }
+        let squareLength2 = point.squareLength
+        guard squareLength2 > 0.0 else { return 1.0 }
+        return Swift.min(Swift.max(self.dot(point) / sqrt(squareLength1 * squareLength2), -1.0), 1.0)
     }
     
     public func dot(_ other: CGVector) -> CGFloat {
