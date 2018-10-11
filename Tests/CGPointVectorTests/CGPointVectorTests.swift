@@ -1,5 +1,5 @@
 import XCTest
-@testable import CGPointVector
+import CGPointVector
 
 class CGPointVectorTests: XCTestCase {
     let torelance: CGFloat = 1.0e-5;
