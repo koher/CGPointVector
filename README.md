@@ -35,14 +35,14 @@ let dotProduct = a.dot(b) // 26.0
 ```swift
 .package(
     url: "https://github.com/koher/CGPointVector.git",
-    from: "0.3.0-alpha"
+    from: "0.3.0"
 )
 ```
 
 ### Carthage
 
 ```
-github "koher/CGPointVector" "dev-0.3.0"
+github "koher/CGPointVector" ~> 0.3.0
 ```
 
 ## License
