@@ -2,16 +2,16 @@ matrix:
   include:
     - os: osx
       language: objective-c
-      osx_image: xcode9.2
+      osx_image: xcode10
       script:
         - set -o pipefail
         - xcodebuild test -scheme CGPointVector-macOS -configuration Debug | xcpretty -c
-        - xcodebuild test -scheme CGPointVector-iOS -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X" | xcpretty -c
+        - xcodebuild test -scheme CGPointVector-iOS -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone XS" | xcpretty -c
         - xcodebuild test -scheme CGPointVector-tvOS -configuration Debug -sdk appletvsimulator -destination "platform=tvOS Simulator,name=Apple TV 4K" | xcpretty -c
-        - xcodebuild build -scheme CGPointVector-watchOS -configuration Debug -sdk watchsimulator -destination "platform=watchOS Simulator,name=Apple Watch Series 3 - 38mm" | xcpretty -c
+        - xcodebuild build -scheme CGPointVector-watchOS -configuration Debug -sdk watchsimulator -destination "platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm" | xcpretty -c
     - os: osx
       language: generic
-      osx_image: xcode9.2
+      osx_image: xcode10
       script:
         - swift --version
         - swift build

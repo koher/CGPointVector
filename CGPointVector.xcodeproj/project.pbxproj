@@ -30,21 +30,28 @@
 		D62C6DFD1FB5657B00E7DF02 /* CGPointVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D62C6DE81FB5657000E7DF02 /* CGPointVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D62C6DFE1FB5657B00E7DF02 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE91FB5657000E7DF02 /* CGRect.swift */; };
 		D62C6DFF1FB5657B00E7DF02 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DEA1FB5657000E7DF02 /* CGSize.swift */; };
-		D62C6E001FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */; };
+		D62C6E001FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */; };
 		D62C6E011FB5658A00E7DF02 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */; };
 		D62C6E021FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E031FB5658A00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
 		D62C6E041FB5658A00E7DF02 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */; };
-		D62C6E051FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */; };
+		D62C6E051FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */; };
 		D62C6E061FB5658A00E7DF02 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */; };
 		D62C6E071FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E081FB5658A00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
 		D62C6E091FB5658A00E7DF02 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */; };
-		D62C6E0A1FB5658C00E7DF02 /* CGAffineTransormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */; };
+		D62C6E0A1FB5658C00E7DF02 /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */; };
 		D62C6E0B1FB5658C00E7DF02 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */; };
 		D62C6E0C1FB5658C00E7DF02 /* CGPointVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */; };
 		D62C6E0D1FB5658C00E7DF02 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */; };
 		D62C6E0E1FB5658C00E7DF02 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */; };
+		D63F165D20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F165E20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F165F20DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F166020DB641300F8B479 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F165C20DB641300F8B479 /* CGVector.swift */; };
+		D63F166220DB64CE00F8B479 /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F166120DB64CE00F8B479 /* CGVectorTests.swift */; };
+		D63F166320DB64CE00F8B479 /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F166120DB64CE00F8B479 /* CGVectorTests.swift */; };
+		D63F166420DB64CE00F8B479 /* CGVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F166120DB64CE00F8B479 /* CGVectorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,19 +86,20 @@
 		D62C6DB71FB564F700E7DF02 /* CGPointVector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGPointVector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62C6DBF1FB564F700E7DF02 /* CGPointVectorTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CGPointVectorTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62C6DD31FB5650C00E7DF02 /* CGPointVector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGPointVector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransormTests.swift; sourceTree = "<group>"; };
+		D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformTests.swift; sourceTree = "<group>"; };
 		D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointVectorTests.swift; sourceTree = "<group>"; };
 		D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
 		D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 		D62C6DE21FB5657000E7DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D62C6DE31FB5657000E7DF02 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		D62C6DE61FB5657000E7DF02 /* CGAffineTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransform.swift; sourceTree = "<group>"; };
 		D62C6DE71FB5657000E7DF02 /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		D62C6DE81FB5657000E7DF02 /* CGPointVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGPointVector.h; sourceTree = "<group>"; };
 		D62C6DE91FB5657000E7DF02 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		D62C6DEA1FB5657000E7DF02 /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		D62C6DEB1FB5657000E7DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63F165C20DB641300F8B479 /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		D63F166120DB64CE00F8B479 /* CGVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVectorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				D62C6DDC1FB5657000E7DF02 /* CGPointVectorTests */,
-				D62C6DE31FB5657000E7DF02 /* LinuxMain.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -185,11 +192,12 @@
 		D62C6DDC1FB5657000E7DF02 /* CGPointVectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				D62C6DDD1FB5657000E7DF02 /* CGAffineTransormTests.swift */,
+				D62C6DDD1FB5657000E7DF02 /* CGAffineTransformTests.swift */,
 				D62C6DDE1FB5657000E7DF02 /* CGPointTests.swift */,
 				D62C6DDF1FB5657000E7DF02 /* CGPointVectorTests.swift */,
 				D62C6DE01FB5657000E7DF02 /* CGRectTests.swift */,
 				D62C6DE11FB5657000E7DF02 /* CGSizeTests.swift */,
+				D63F166120DB64CE00F8B479 /* CGVectorTests.swift */,
 				D62C6DE21FB5657000E7DF02 /* Info.plist */,
 			);
 			path = CGPointVectorTests;
@@ -211,6 +219,7 @@
 				D62C6DE81FB5657000E7DF02 /* CGPointVector.h */,
 				D62C6DE91FB5657000E7DF02 /* CGRect.swift */,
 				D62C6DEA1FB5657000E7DF02 /* CGSize.swift */,
+				D63F165C20DB641300F8B479 /* CGVector.swift */,
 				D62C6DEB1FB5657000E7DF02 /* Info.plist */,
 			);
 			path = CGPointVector;
@@ -387,35 +396,42 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = koherent.org;
 				TargetAttributes = {
 					D62C6D7E1FB564A300E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D62C6D861FB564A300E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D62C6D9A1FB564CF00E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D62C6DA21FB564CF00E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D62C6DB61FB564F700E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D62C6DBE1FB564F700E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					D62C6DD21FB5650C00E7DF02 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -501,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DF01FB5657900E7DF02 /* CGSize.swift in Sources */,
+				D63F165D20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DED1FB5657900E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DEF1FB5657900E7DF02 /* CGRect.swift in Sources */,
 				D62C6DEC1FB5657900E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -513,8 +530,9 @@
 			files = (
 				D62C6E011FB5658A00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E021FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */,
+				D63F166220DB64CE00F8B479 /* CGVectorTests.swift in Sources */,
 				D62C6E041FB5658A00E7DF02 /* CGSizeTests.swift in Sources */,
-				D62C6E001FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */,
+				D62C6E001FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E031FB5658A00E7DF02 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DF51FB5657A00E7DF02 /* CGSize.swift in Sources */,
+				D63F165E20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DF21FB5657A00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DF41FB5657A00E7DF02 /* CGRect.swift in Sources */,
 				D62C6DF11FB5657A00E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -536,8 +555,9 @@
 			files = (
 				D62C6E061FB5658A00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E071FB5658A00E7DF02 /* CGPointVectorTests.swift in Sources */,
+				D63F166320DB64CE00F8B479 /* CGVectorTests.swift in Sources */,
 				D62C6E091FB5658A00E7DF02 /* CGSizeTests.swift in Sources */,
-				D62C6E051FB5658A00E7DF02 /* CGAffineTransormTests.swift in Sources */,
+				D62C6E051FB5658A00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E081FB5658A00E7DF02 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DFA1FB5657A00E7DF02 /* CGSize.swift in Sources */,
+				D63F165F20DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DF71FB5657A00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DF91FB5657A00E7DF02 /* CGRect.swift in Sources */,
 				D62C6DF61FB5657A00E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -559,8 +580,9 @@
 			files = (
 				D62C6E0B1FB5658C00E7DF02 /* CGPointTests.swift in Sources */,
 				D62C6E0C1FB5658C00E7DF02 /* CGPointVectorTests.swift in Sources */,
+				D63F166420DB64CE00F8B479 /* CGVectorTests.swift in Sources */,
 				D62C6E0E1FB5658C00E7DF02 /* CGSizeTests.swift in Sources */,
-				D62C6E0A1FB5658C00E7DF02 /* CGAffineTransormTests.swift in Sources */,
+				D62C6E0A1FB5658C00E7DF02 /* CGAffineTransformTests.swift in Sources */,
 				D62C6E0D1FB5658C00E7DF02 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62C6DFF1FB5657B00E7DF02 /* CGSize.swift in Sources */,
+				D63F166020DB641300F8B479 /* CGVector.swift in Sources */,
 				D62C6DFC1FB5657B00E7DF02 /* CGPoint.swift in Sources */,
 				D62C6DFE1FB5657B00E7DF02 /* CGRect.swift in Sources */,
 				D62C6DFB1FB5657B00E7DF02 /* CGAffineTransform.swift in Sources */,
@@ -611,6 +634,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -618,6 +642,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -671,6 +696,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -678,6 +704,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -724,7 +751,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVector;
 				PRODUCT_NAME = CGPointVector;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -743,7 +770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVector;
 				PRODUCT_NAME = CGPointVector;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -757,7 +784,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -771,7 +798,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -794,7 +821,7 @@
 				PRODUCT_NAME = CGPointVector;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -816,7 +843,7 @@
 				PRODUCT_NAME = CGPointVector;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -833,7 +860,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -850,13 +877,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		D62C6DC91FB564F700E7DF02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -869,7 +897,7 @@
 				PRODUCT_NAME = CGPointVector;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.1;
 			};
@@ -878,6 +906,7 @@
 		D62C6DCA1FB564F700E7DF02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -890,7 +919,7 @@
 				PRODUCT_NAME = CGPointVector;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.1;
 			};
@@ -906,7 +935,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.1;
 			};
@@ -922,7 +951,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.CGPointVectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.1;
 			};
@@ -932,6 +961,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -944,7 +974,7 @@
 				PRODUCT_NAME = CGPointVector;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.1;
 			};
@@ -954,6 +984,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -966,7 +997,7 @@
 				PRODUCT_NAME = CGPointVector;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.1;
 			};
