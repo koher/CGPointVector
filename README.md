@@ -26,6 +26,7 @@ let length = a.length // 5.0
 let distance = a.distance(from: b) // 1.4142135623731
 let unitVector = a.unit // (0.6, -0.8)
 let dotProduct = a.dot(b) // 26.0
+let angle = a.angle(from: b) // 0.26299473168091936
 ```
 
 ## License
