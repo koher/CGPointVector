@@ -94,8 +94,9 @@ class CGVectorTests: XCTestCase {
     }
     
     func testMatmul() {
-        XCTAssertTrue((CGVector(dx: 1.0, dy: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4))
-            .isNearlyEqual(to: CGVector(dx: 0.0, dy: sqrt(2)), epsilon: torelance))
+        XCTAssertTrue((CGVector(dx: 1.0, dy: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4)).isNearlyEqual(to: CGVector(dx: 0.0, dy: sqrt(2)), epsilon: torelance))
+        XCTAssertTrue((CGVector(dx: 1.0, dy: 1.0) * CGAffineTransform(translationX: 1.0, y: -2.0)).isNearlyEqual(to: CGVector(dx: 2.0, dy: -1.0), epsilon: torelance))
+        XCTAssertTrue((CGVector(dx: 1.0, dy: 2.0) * CGAffineTransform(a: 3.0, b: 4.0, c: 5.0, d: 6.0, tx: 7.0, ty: 8.0)).isNearlyEqual(to: CGVector(dx: 20, dy: 24), epsilon: torelance))
     }
     
     func testAdditionAssignment() {
