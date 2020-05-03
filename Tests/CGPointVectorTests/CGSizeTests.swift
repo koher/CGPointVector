@@ -93,11 +93,6 @@ class CGSizeTests: XCTestCase {
         XCTAssertTrue((CGSize(width: 8.0, height: -2.0) / 4.0).isNearlyEqual(to: CGSize(width: 2.0, height: -0.5), epsilon: torelance))
     }
     
-    func testMatmul() {
-        XCTAssertTrue((CGSize(width: 1.0, height: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4))
-            .isNearlyEqual(to: CGSize(width: 0.0, height: sqrt(2)), epsilon: torelance))
-    }
-    
     func testAdditionAssignment() {
         var a = CGSize(width: 1.0, height: 2.0)
         a += CGSize(width: 3.0, height: -4.0)
@@ -124,12 +119,6 @@ class CGSizeTests: XCTestCase {
         XCTAssertTrue(a.isNearlyEqual(to: CGSize(width: 8.0, height: -2.0) / 4.0, epsilon: torelance))
     }
     
-    func testMatmulAssignment() {
-        var a = CGSize(width: 1.0, height: 1.0)
-        a *= CGAffineTransform(rotationAngle: CGFloat.pi / 4)
-        XCTAssertTrue(a.isNearlyEqual(to: CGSize(width: 0.0, height: sqrt(2)), epsilon: torelance))
-    }
-    
     static var allTests : [(String, (CGSizeTests) -> () throws -> Void)] {
         return [
             ("testisNearlyEqual", testisNearlyEqual),
@@ -149,12 +138,10 @@ class CGSizeTests: XCTestCase {
             ("testSubtract", testSubtract),
             ("testMultiply", testMultiply),
             ("testDivide", testDivide),
-            ("testMatmul", testMatmul),
             ("testAdditionAssignment", testAdditionAssignment),
             ("testSuntractionAssignment", testSuntractionAssignment),
             ("testMultiplicationAssignment", testMultiplicationAssignment),
             ("testDivisionAssignment", testDivisionAssignment),
-            ("testMatmulAssignment", testMatmulAssignment),
         ]
     }
 }
