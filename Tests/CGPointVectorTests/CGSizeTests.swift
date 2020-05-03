@@ -18,6 +18,8 @@ class CGSizeTests: XCTestCase {
     
     func testLength() {
         XCTAssertEqual(CGSize(width: 3.0, height: -4.0).length, 5.0, accuracy: torelance)
+        XCTAssertEqual(CGSize(width: .greatestFiniteMagnitude, height: 0.0).length, .greatestFiniteMagnitude)
+        XCTAssertEqual(CGSize(width: 0.0, height: .leastNonzeroMagnitude).length, .leastNonzeroMagnitude)
     }
     
     func testSquareLength() {

@@ -18,6 +18,8 @@ class CGVectorTests: XCTestCase {
     
     func testLength() {
         XCTAssertEqual(CGVector(dx: 3.0, dy: -4.0).length, 5.0, accuracy: torelance)
+        XCTAssertEqual(CGVector(dx: .greatestFiniteMagnitude, dy: 0.0).length, .greatestFiniteMagnitude)
+        XCTAssertEqual(CGVector(dx: 0.0, dy: .leastNonzeroMagnitude).length, .leastNonzeroMagnitude)
     }
     
     func testSquareLength() {
