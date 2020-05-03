@@ -1,6 +1,4 @@
 .DS_Store
 /.build
 /Packages
-/*.xcodeproj/project.xcworkspace/xcuserdata
-/*.xcodeproj/xcuserdata
-/Carthage
+/*.xcodeproj

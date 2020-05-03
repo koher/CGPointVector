@@ -94,8 +94,9 @@ class CGPointTests: XCTestCase {
     }
     
     func testMatmul() {
-        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4))
-            .isNearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) * CGAffineTransform(rotationAngle: CGFloat.pi / 4)).isNearlyEqual(to: CGPoint(x: 0.0, y: sqrt(2)), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 1.0, y: 1.0) * CGAffineTransform(translationX: 1.0, y: -2.0)).isNearlyEqual(to: CGPoint(x: 2.0, y: -1.0), epsilon: torelance))
+        XCTAssertTrue((CGPoint(x: 1.0, y: 2.0) * CGAffineTransform(a: 3.0, b: 4.0, c: 5.0, d: 6.0, tx: 7.0, ty: 8.0)).isNearlyEqual(to: CGPoint(x: 20, y: 24), epsilon: torelance))
     }
     
     func testAdditionAssignment() {
