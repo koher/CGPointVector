@@ -7,7 +7,7 @@ extension CGPoint {
     }
     
     public var length: CGFloat {
-        return sqrt(squareLength)
+        return hypot(x, y)
     }
     
     public var squareLength: CGFloat {

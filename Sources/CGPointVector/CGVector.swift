@@ -7,7 +7,7 @@ extension CGVector {
     }
     
     public var length: CGFloat {
-        return sqrt(squareLength)
+        return hypot(dx, dy)
     }
     
     public var squareLength: CGFloat {

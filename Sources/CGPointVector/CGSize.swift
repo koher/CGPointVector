@@ -7,7 +7,7 @@ extension CGSize {
     }
     
     public var length: CGFloat {
-        return sqrt(squareLength)
+        return hypot(width, height)
     }
     
     public var squareLength: CGFloat {
