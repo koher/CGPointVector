@@ -28,23 +28,6 @@ let unitVector = a.unit // (0.6, -0.8)
 let dotProduct = a.dot(b) // 26.0
 ```
 
-## Installation
-
-### Swift Package Manager
-
-```swift
-.package(
-    url: "https://github.com/koher/CGPointVector.git",
-    from: "0.3.0"
-)
-```
-
-### Carthage
-
-```
-github "koher/CGPointVector" ~> 0.3.0
-```
-
 ## License
 
 [The MIT License](LICENSE)
