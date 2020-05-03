@@ -20,8 +20,4 @@ extension CGAffineTransform {
     public static func *= (lhs: inout CGAffineTransform, rhs: CGAffineTransform) {
         lhs = lhs * rhs
     }
-    
-    public static func * (lhs: CGAffineTransform, rhs: CGPoint) -> CGPoint {
-        return rhs.applying(lhs)
-    }
 }
