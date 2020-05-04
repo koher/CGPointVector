@@ -18,6 +18,8 @@ class CGPointTests: XCTestCase {
     
     func testLength() {
         XCTAssertEqual(CGPoint(x: 3.0, y: -4.0).length, 5.0, accuracy: torelance)
+        XCTAssertEqual(CGPoint(x: .greatestFiniteMagnitude, y: 0.0).length, .greatestFiniteMagnitude)
+        XCTAssertEqual(CGPoint(x: 0.0, y: .leastNonzeroMagnitude).length, .leastNonzeroMagnitude)
     }
     
     func testSquareLength() {
