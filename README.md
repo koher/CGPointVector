@@ -1,6 +1,6 @@
 # CGPointVector
 
-[![Build Status](https://travis-ci.org/koher/CGPointVector.svg?branch=master)](https://travis-ci.org/koher/CGPointVector)
+[![CGPointVector CI](https://github.com/koher/CGPointVector/actions/workflows/tests.yml/badge.svg)](https://github.com/koher/CGPointVector/actions)
 
 _CGPointVector_ provides the extension for arithmetic operations with _CGPoint_ in __Swift__, which are convenient when _CGPoint_ values are used as vectors.
 
